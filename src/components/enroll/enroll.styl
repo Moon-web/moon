@@ -1,0 +1,310 @@
+.order-wrapper
+  width 100%
+  height auto
+  .order-content
+    width 1000px
+    height auto
+    margin 0 auto
+    .path-wrapper
+      width 100%
+      font-size 12px
+      color #333
+      margin-top 39px
+      margin-bottom 39px
+  .order-table
+    width 1000px
+    height auto
+    box-sizing border-box
+    border 1px solid #e1e1e1
+    padding 30px 18px 20px 18px
+    .title
+      width 100%
+      font-size 16px
+      color #333
+      font-weight bold
+      margin-bottom 20px
+    .head-title
+      width 100%
+      height auto
+      padding 10px 0
+      border-bottom 3px solid #f9ad9a
+      .head-titleUl
+        width 100%
+        height 32px
+        .head-titleList
+          float left
+          height 100%
+          line-height 32px
+          font-size 12px
+          color #333
+          &:nth-child(1)
+            width 325px
+            padding 0 80px 0 14px
+            box-sizing border-box
+          &:nth-child(2)
+            width 235px
+          &:nth-child(3)
+            width 130px
+            text-align center
+          &:nth-child(4)
+            width 140px
+            text-align center
+          &:nth-child(5)
+            width 130px
+            text-align center
+    .order-tableCon
+      padding 20px 0 8px 0
+      height auto
+      box-sizing border-box
+      .order-tableCon-top
+        overflow hidden
+        width 100%
+        height auto
+        margin-bottom 10px
+        .order-tableConTopLeft
+          margin-right 30px
+          font-size 12px
+          color #666
+          line-height 21px
+          height 21px
+          float left
+          &:before
+            float left
+            width 21px
+            height 21px
+            margin-right 6px
+            content ''
+            background url("resource/icon_gongyingshang.png") no-repeat
+        .order-tableConTopRight
+          float left
+          margin-right 30px
+          font-size 12px
+          color #666
+          line-height 21px
+          height 21px
+          float left
+          &:before
+            float left
+            margin-right 6px
+            width 21px
+            height 21px
+            content ''
+            background url("resource/icon_chanpin.png") no-repeat
+      .order-tableCon-bottom
+        width 100%
+        height auto
+        .order-tableConList
+          width 100%
+          height auto
+          overflow hidden
+          margin-bottom 15px
+          background #f7f7f7
+          border-top 1px dashed #ccc
+          border-bottom 1px dashed #ccc
+          padding 14px 0
+          box-sizing border-box
+          .order-tableUl
+            width 100%
+            max-height 105px
+            overflow hidden
+            .order-table-list
+              float left
+              overflow hidden
+              height 100%
+              font-size 12px
+              &:nth-child(1)
+                width 325px
+                padding 0 80px 0 14px
+                box-sizing border-box
+              &:nth-child(2)
+                width 235px
+              &:nth-child(3)
+                width 130px
+                text-align center
+              &:nth-child(4)
+                width 140px
+                text-align center
+              &:nth-child(5)
+                width 130px
+                text-align center
+                color #f35833
+              .table-listBg
+                float left
+                width 60px
+                height 60px
+                background-size cover
+                background-position center
+                margin-right 8px
+              .table-list-productName
+                font-size 12px
+                color #333
+              .skuTag
+                display block
+                font-size 12px
+                color #333
+                height 18px
+                overflow hidden
+                text-overflow ellipsis
+                width 100%
+                white-space nowrap
+              .counter-wrapper
+                color #f00
+
+
+
+        .order-tableAddress
+          width 100%
+          height 100px
+          box-sizing border-box
+          padding-top 35px
+          overflow hidden
+          .Address
+            float left
+            height 30px
+            width 80%
+            .address-title
+              line-height 30px
+              float left
+              height 30px
+              margin 0 20px
+              font-size 14px
+              color #666
+            .detail-address
+              width 600px
+              float left
+          .protocol
+            float right
+            margin-right 50px
+            cursor pointer
+            .lable
+              display block
+              height 30px
+              line-height 30px
+              span
+                font-size 14px
+                color #2b9cf0
+                text-decoration underline
+
+
+
+
+
+
+
+  .order
+    margin 30px 0
+    width 100%
+    height auto
+    .order-center
+      height auto
+      width 100%
+      overflow hidden
+      .order-con
+        float right
+        height auto
+        width 390px
+        border 2px solid #f35833
+        position relative
+        box-sizing border-box
+        .sure-money
+          margin 28px 0px 10px 0
+        .count
+          .title
+            dispaly inline-block
+          .num
+            dispaly inline-block
+            margin-right 15px
+          .price
+            margin-right 0px
+        p
+          font-size 12px
+          color #333
+          font-weight bold
+          text-align right
+          line-height 24px
+          padding 0 10px
+          box-sizing border-box
+          .money
+            font-size 24px
+            color #f35833
+          .num
+            font-size 12px
+            color #666
+            font-weight normal
+          .time
+            font-size 12px
+            color #666
+            font-weight normal
+        .sure-time
+          margin-bottom 15px
+    .order-button
+      width 100%
+      height auto
+      overflow hidden
+      .order-btn
+        float right
+        .cancel
+          width 180px
+          height 40px
+          background rgba(0,0,0,0.4)
+          border none
+          outline none
+          float left
+          color #fff
+          cursor pointer
+        .commit
+          width 180px
+          height 40px
+          background #f35833
+          border none
+          outline none
+          float left
+          color #fff
+          cursor pointer
+
+
+
+
+.JcEnter-out
+  position fixed
+  width 100%
+  height 100%
+  background rgba(0,0,0,0.4)
+  z-index 999
+  left 0
+  top 0
+  display none
+  .JC-outContent
+    position absolute
+    left 50%
+    top 50%
+    width 400px
+    height 500px
+    margin-top -250px
+    margin-left -200px
+    padding 10px
+    background #fff
+    box-shadow 0px 0px 5px #333
+    font-size 14px
+    color #999
+    .JcEnter-close
+      display block
+      height 30px
+      font-size 22px
+      text-align right
+      padding-right 20px
+      box-sizing border-box
+      cursor pointer
+      line-height 30px
+      background url("resource/close.png") no-repeat right center
+    #JcEnterContent
+      width 100%
+      height 450px
+      overflow-y auto
+.outShow
+  display block
+
+
+
+
+

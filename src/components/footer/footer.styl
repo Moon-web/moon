@@ -1,0 +1,151 @@
+@import "../../common/common.styl"
+.footer
+  width 100%
+  border-top 1px solid #e1e1e1
+ .footer-content
+   width 1200px
+   height 100%
+   margin 0 auto
+   padding-bottom 50px
+   .foot
+     height 130px
+     width 100%
+     .icon-ul
+       width 100%
+       height auto
+       overflow hidden
+       font-size 0
+       .item
+         float left
+         width 210px
+         height 48px
+         font-size 16px
+         margin-right 120px
+         padding 40px 0
+         .itemRight
+           float right
+           width 128px
+           .title
+             float left
+             font-size 16px
+             color #333333
+             font-family MicrosoftYaHei
+             margin 4px 0 8px 0
+           .content
+             float left
+             font-size 12px
+             color #999999
+         &:before
+           content ''
+           display inline-block
+           vertical-align top
+           width 48px
+           height 48px
+           background-repeat no-repeat
+           background-size 100%
+           margin-right 8px
+         &:last-child
+           margin-right 0
+           &:before
+             background-image url("resource/footer_4.png")
+         &:nth-child(1)
+           &:before
+             background-image url("resource/footer_1.png")
+         &:nth-child(2)
+           &:before
+             background-image url("resource/footer_2.png")
+         &:nth-child(3)
+           &:before
+             background-image url("resource/footer_3.png")
+ .footer-center
+   width 100%
+   height auto
+   border-top 1px solid #e1e1e1
+   padding-top 40px
+   box-sizing border-box
+   overflow hidden
+   .left
+     float left
+     height auto
+     width 850px
+     border-right 1px solid #e1e1e1
+     box-sizing border-box
+     overflow hidden
+     .footer-leftBox
+       float left
+       width 33%
+       box-sizing border-box
+       font-size 14px
+       height auto
+       overflow hidden
+       .footer-leftTitle
+         font-size 16px
+         margin-bottom 15px
+         float none
+         cursor default
+         color #2a3038
+         font-family MicrosoftYaHei
+         font-weight bold
+       .footer-help-con
+         width 100%
+         height auto
+         overflow hidden
+         .footer-list
+           width 100%
+           height 100%
+           .list-item
+             font-size 12px
+             color #666666
+             line-height 26px
+             width 100%
+             overflow hidden
+             text-overflow ellipsis
+             white-space nowrap
+             &:hover
+               mainColor()
+               cursor pointer
+
+   .right
+     float right
+     width 350px
+     height 160px
+     .right-bg
+       width 350px
+       height 160px
+       background url("resource/icon_weixingongzhonghao.png") no-repeat center
+     .title
+       display block
+       font-size 16px
+       text-align center
+       color #333333
+       font-weight bold
+
+ .bottom
+   width 100%
+   border-top 3px solid #19ac27
+   padding-bottom 35px
+   background #2a3038
+   padding 40px 0
+   .bottom-list
+     text-align center
+     font-size 12px
+     color #fff
+     margin-bottom 14px
+     .list
+       padding 0 24px
+       color #fff
+       font-size 12px
+       border-right 1px solid #e1e1e1
+       &:last-child
+         border-right none
+     .hover:hover
+       mainColor()
+       cursor pointer
+   .bottom-listp
+     text-align center
+     font-size 12px
+     color #fff
+
+
+
+

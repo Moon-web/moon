@@ -1,0 +1,65 @@
+@import "../../common/common.styl"
+.productKind-wrapper
+  width 100%
+  height auto
+  .productKind-container
+    width 100%
+    height 440px
+    background rgba(58,55,54,0.8)
+    color #fff
+    font-size 14px
+    position relative
+    .kind-box
+      width 100%
+      height 440px
+      overflow hidden
+      .kind-first
+        width 100%
+        height 55px
+        text-align center
+        border-bottom 1px solid #181f27
+        box-sizing border-box
+        &:first-child
+          border-top none
+        .first-item
+          display block
+          width 100%
+          height 100%
+          line-height 53px
+          cursor pointer
+    .kind-firstBox
+      position absolute
+      left 220px
+      top 0px
+      width 450px
+      height 440px
+      background #fff
+      color #000
+      .kind-second
+        width 100%
+        height auto
+        overflow hidden
+        .second-item
+          float left
+          width 180px
+          padding-left 30px
+          box-sizing border-box
+          height 100%
+          color #666
+          line-height 40px
+          text-align left
+          mainColor()
+          cursor default
+        .kind-secondBox
+          float left
+          width 270px
+          height auto
+          overflow hidden
+          .kind-third
+            float left
+            padding 0 20px
+            line-height 40px
+            cursor pointer
+            &:hover
+              mainColor()
+

@@ -1,0 +1,73 @@
+.registerState
+  width 100%
+  height auto
+  .warn-wrapper
+    width 400px
+    height auto
+    margin 0 auto
+    margin-top 180px
+    margin-bottom 320px
+    .warning
+      width 100%
+      height auto
+      text-align center
+      font-size 0
+      .warning-icon
+        display inline-block
+        vertical-align top
+        width 40px
+        height 40px
+        background-repeat no-repeat
+        background-position center
+      .warning-text
+        display inline-block
+        vertical-align top
+        width auto
+        height 40px
+        line-height 40px
+        font-size 16px
+        margin-left 20px
+    .button
+      width 100%
+      height auto
+      font-size 0
+      text-align center
+      margin-top 40px
+      .href-button
+        display inline-block
+        vertical-align top
+        width 190px
+        height 40px
+        border-radius 3px
+        font-size 16px
+        text-align center
+        line-height 40px
+        cursor pointer
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+    &.notRegisterEmail
+      .warning-icon
+        background-image url("resource/cry.png")
+      .warning-text
+        color #333
+      .href-button
+        background-color #19ac27
+        color #fff
+    &.overTimeRegister
+      .warning-icon
+        background-image url("resource/cry.png")
+      .warning-text
+        color #333
+      .href-button
+        background-color #19ac27
+        color #fff
+    &.activitySuccess
+      .warning-icon
+        background-image url("resource/icon_smile.png")
+      .warning-text
+        color #19ac27
+      .href-button
+        background-color #19ac27
+        color #fff

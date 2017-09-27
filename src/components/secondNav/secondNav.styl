@@ -1,0 +1,56 @@
+@import "../../common/common.styl"
+.secondNav-wrapper
+  width 819px
+  height 89px
+  padding-top 20px
+  box-sizing border-box
+  .secondNav-container
+    width 100%
+    height 100%
+    background url("../nav/resource/icon_biaoqianlan.png") no-repeat center
+    .secondNav-box
+      width 100%
+      padding-top 27px
+      box-sizing border-box
+      height 100%
+      font-size 0
+      .secontNav-item
+        float left
+        height 26px
+        width 135px
+        line-height 26px
+        font-size 14px
+        color #fff
+        text-align center
+        &:after
+          content ''
+          display inline-block
+          vertical-align top
+          width 1px
+          height 18px
+          background #fff
+          margin-top 4px
+        &:last-child
+          &:after
+            content ''
+            display inline-block
+            vertical-align top
+            width 0px
+            height 0px
+            background #fff
+            margin-top 4px
+        .item
+          display inline-block
+          vertical-align top
+          width 86px
+          margin 0 22px
+          height 100%
+          color #fff
+          line-height 26px
+          text-align center
+          border-radius 3px
+          cursor pointer
+          &.active
+            background #fff
+            mainColor()
+

@@ -1,0 +1,160 @@
+@import "../../common/common.styl"
+.custom-service
+  position fixed
+  right 20px
+  bottom  100px
+  width 62px
+  height auto
+  background-color #fff
+  font-size 0
+  z-index 99
+  .custom-list
+    display inline-block
+    vertical-align top
+    width 100%
+    height 80px
+    position relative
+    box-sizing border-box
+    padding 0 6px
+    cursor pointer
+    text-align center
+    .icon
+      display inline-block
+      vertical-align top
+      background-position center
+      background-repeat no-repeat
+    .text
+      display inline-block
+      vertical-align top
+      font-size 12px
+      margin-top 12px
+      color #666
+    &:nth-child(1)
+      cursor default
+      .icon
+        width 20px
+        height 21px
+        margin-top 20px
+        background-image url("resource/icon_erweima_up.png")
+      .tCode
+        display none
+        width 120px
+        height 120px
+        position absolute
+        top 0
+        left -136px
+        z-index 99
+        background-color #fff
+        background-image url("resource/erweima.png")
+      &:hover
+        mainBack()
+        .tCode
+          display block
+        &:before
+          content ''
+          display block
+          width 8px
+          height 16px
+          background-repeat no-repeat
+          background-image url("resource/icon_sanjiao.png")
+          position absolute
+          left -8px
+          top 50%
+          margin-top -8px
+        .icon
+          background-image url("resource/icon_erweima_down.png")
+        .text
+          color #fff
+    &:nth-child(2)
+      cursor pointer
+      .qq
+        display inline-block
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+      .icon
+        width 27px
+        height 33px
+        margin-top 14px
+        background-image url("resource/icon_zaixiankefu_up.png")
+      &:hover
+        mainBack()
+        .icon
+          background-image url("resource/icon_zaixiankefu_down.png")
+        .text
+          color #fff
+    &:nth-child(3)
+      cursor pointer
+      .icon
+        width 25px
+        height 14px
+        margin-top 33px
+        background-image url("resource/icon_dingbu_up.png")
+      &:hover
+        mainBack()
+        .icon
+          background-image url("resource/icon_dingbu_down.png")
+.custom-wrapper
+  position fixed
+  width 300px
+  height auto
+  left 50%
+  margin-left -150px
+  top 150px
+  z-index 99
+  background-color #fff
+  border-radius 3px
+  box-shadow 0 0 5px rgba(0,0,0,0.5)
+  font-size 0
+  .close-head
+    display inline-block
+    vertical-align top
+    width 100%
+    height 30px
+    background-color #e1e1e1
+    text-align right
+    .close-button
+      display inline-block
+      vertical-align top
+      width 30px
+      height 100%
+      text-align center
+      cursor pointer
+      background-repeat no-repeat
+      background-position center
+      background-image url("resource/close.png")
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+  .custom-wrapper-ul
+    width 100%
+    height 100%
+    box-sizing border-box
+    padding 15px
+    font-size 0
+    text-align center
+    .custom-wrapper-li
+      display inline-block
+      vertical-align top
+      width 90px
+      height 100px
+      text-align center
+      .qq-logo
+        display inline-block
+        vertical-align top
+        width 70px
+        height 70px
+        background-position center
+        background-repeat no-repeat
+        background-image url("resource/qq-logo.png")
+      .qq-name
+        display inline-block
+        vertical-align top
+        width 100%
+        font-size 14px
+        color #999
+        line-height 30px
+

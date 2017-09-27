@@ -1,0 +1,850 @@
+@import '../../common/common.styl'
+.indexPage-wrapper
+  width 100%
+  height auto
+  background #f5f5f5
+  .swiper-wrapper-con
+    width 100%
+    height 440px
+    background #fff
+    position relative
+    .banner-wrapper
+      position absolute
+      top 0
+      left 0
+      height 100%
+      width 100%
+      z-index 0
+      overflow hidden
+      .banner-content
+        width 1200px
+        height 100%
+        margin 0 auto
+        .banner-box
+          width 100%
+          height 100%
+          position relative
+          left -360px
+          top 0
+          .banner-contentBox
+            width 1920px
+            height 100%
+            .background-item
+              iBlock()
+              width 100%
+              height 100%
+              background-position center
+              background-size cover
+              background-repeat no-repeat
+            .background-item[lazy=loading]
+              background-size auto
+            .background-item[lazy=error]
+              background-size auto
+    .other-wrapper
+      position absolute
+      top 13px
+      left 50%
+      margin-left 360px
+      width 240px
+      height 415px
+      z-index 1
+      .other-top
+        width 100%
+        height 215px
+        padding-top 18px
+        box-sizing border-box
+        margin-bottom 10px
+        background #fff
+        .other-top-bg
+          width 100%
+          height 70px
+          background url("resource/icon_touxiang.png") no-repeat center
+        .other-top-content
+          display block
+          width 100%
+          text-align center
+        .other-infomation
+          width 100%
+          margin-top 16px
+          height auto
+          overflow hidden
+          .login-con
+            width 100%
+            height auto
+            overflow hidden
+            .statue
+              mainBack()
+              color #fff
+            .register
+              float left
+              height 30px
+              width 94px
+              text-align center
+              line-height 28px
+              box-sizing border-box
+              mainBorder(1px,solid)
+              cursor pointer
+              font-size 14px
+            .login
+              float left
+              height 30px
+              width 94px
+              text-align center
+              line-height 28px
+              margin 0 10px 0 20px
+              font-size 14px
+              box-sizing border-box
+              mainBorder(1px,solid)
+              cursor pointer
+          .exit-login-con
+            width 100%
+            height auto
+            overflow hidden
+            .exit-login
+              display block
+              height 30px
+              width auto
+              text-align center
+              line-height 28px
+              box-sizing border-box
+              cursor pointer
+              font-size 14px
+              margin 0 auto
+        .other-small-item
+          width 100%
+          height auto
+          overflow hidden
+          padding 16px 20px 0 20px
+          box-sizing border-box
+          .small-item
+            float left
+            width 30px
+            height 30px
+            margin-right 26px
+            &:last-child
+              margin-right 0px
+              background url("resource/icon_m_4.png") no-repeat center
+            &:nth-child(1)
+              background url("resource/icon_m_1.png") no-repeat center
+            &:nth-child(2)
+              background url("resource/icon_m_2.png") no-repeat center
+            &:nth-child(3)
+              background url("resource/icon_m_3.png") no-repeat center
+      .other-bottom
+        width 100%
+        height 190px
+        background #fff
+        .other-bottom-title
+          width 100%
+          height 38px
+          padding 0 14px
+          border-bottom 1px solid #e8e8e8
+          box-sizing border-box
+          background #f8f8f8
+          .other-bottom-title-con
+            float left
+            height 100%
+            line-height 37px
+            color #333333
+            font-size 14px
+          .more
+            float right
+            height 100%
+            line-height 37px
+            color #999
+            font-size 14px
+            cursor pointer
+            &:hover
+              mainColor()
+        .other-bottom-content
+          width 100%
+          padding 0 14px
+          box-sizing border-box
+          .other-list
+            width 100%
+            height 100%
+            .other-item
+              width 100%
+              line-height 20px
+              color #333
+              font-size 12px
+              margin-top 8px
+              cursor pointer
+              &:before
+                content '[资讯]'
+                mainColor()
+              &:hover
+                mainColor()
+  .indexPage-container
+    width 1200px
+    height auto
+    margin 0 auto
+    .indexPage-champion
+      width 100%
+      height auto
+      margin-top 40px
+      .champion-title
+        width 100%
+        height 44px
+        .title-bg
+          float left
+          width 38px
+          height 33px
+          background url("resource/icon_remen.png") no-repeat left  top
+        .title
+          float left
+          height 100%
+          line-height 40px
+          margin-left 12px
+          font-size 18px
+          color #333
+      .champion-con
+        width 100%
+        height 148px
+        padding 14px
+        box-sizing border-box
+        background #fff
+        .champion-box
+          width 100%
+          height 100%
+          overflow hidden
+          position relative
+          .champion-item
+            width 224px
+            height 120px
+            float left
+            cursor pointer
+            position relative
+            .champion-itemBg-box
+              width 100%
+              height 100%
+              overflow hidden
+              .champion-itemBg
+                display block
+                width 100%
+                height 100%
+                background-position center
+                background-size containchampion-itemBg-box
+                background-repeat no-repeat
+                transition transform 1s
+                -moz-transition transform 1s;	/* Firefox 4 */
+                -webkit-transition transform 1s;	/* Safari 和 Chrome */
+                -o-transition transform 1s;	/* Opera */
+              .champion-itemBg[lazy=error]
+                background-size contain
+              .champion-itemBg[lazy=loading]
+                background-size contain
+            .champion-mark
+              position absolute
+              left 0
+              top 0
+              right 0
+              bottom 0
+              background rgba(0,0,0,0.5)
+              text-align center
+              line-height 120px
+              color #fff
+              font-size 16px
+              transition background 1s
+              -moz-transition background 1s	/* Firefox 4 */
+              -webkit-transition background 1s	/* Safari 和 Chrome */
+              -o-transition background 1s
+            &:hover
+              .champion-itemBg
+                transform scale(1.2,1.2)
+                -webkit-transform scale(1.2,1.2)	/* Safari 和 Chrome */
+                -moz-transform scale(1.2,1.2)
+                -o-transform scale(1.2,1.2)
+              .champion-mark
+                background rgba(0,0,0,0.2)
+          .swiper-button-prev
+            width 40px
+            height 40px
+            display none
+            z-index 999
+            background url("resource/img_L.png") no-repeat center
+          .swiper-button-next
+            width 40px
+            height 40px
+            display none
+            z-index 999
+            background url("resource/img_R.png") no-repeat center
+          &:hover
+            .swiper-button-prev
+              display block
+            .swiper-button-next
+              display block
+    .indexPage-goodsbox
+      width 100%
+      padding-bottom 80px
+      box-sizing border-box
+      height auto
+      //公共内容
+      .goods-title
+        width 100%
+        height 52px
+        box-sizing border-box
+        .title-box
+          float left
+          height 100%
+          .title-bg
+            float left
+            width 62px
+            height 36px
+          .title
+            float left
+            margin-left 12px
+            line-height 50px
+        .goods-content-title
+          float right
+          height 100%
+          .title-content
+            width 100%
+            height 100%
+            .title-item
+              float left
+              min-width 160px
+              padding 0 10px
+              box-sizing border-box
+              height 50px
+              line-height 47px
+              cursor pointer
+              text-align center
+              box-sizing border-box
+              &.item-active
+                background #fff
+                mainBorder(2px ,solid)
+                border-top 3px solid #19ac27
+                border-bottom none
+                height 52px
+                position relative
+                z-index 3
+      .goods-content
+        width 100%
+        height auto
+        overflow hidden
+        background #fff
+        .goods-left
+          float left
+          width 260px
+          height 440px
+          .goods-left-bg
+            width 100%
+            height 100%
+            background-position center
+            background-size cover
+            background-repeat no-repeat
+          .goods-left-bg[lazy=loading]
+            background-size contain
+          .goods-left-bg[lazy=error]
+            background-size contain
+        .goods-right
+          float left
+          width 940px
+          height 440px
+          .goods-box
+            width 100%
+            height auto
+            overflow hidden
+            .goods-item
+              float left
+              height 221px
+              border-right 1px solid #f0f0f0
+              border-top 1px solid #f0f0f0
+              width 235px
+              margin-top -1px
+              box-sizing border-box
+              .item-titleBox
+                padding 10px 0 0 30px
+                height 66px
+                box-sizing border-box
+                .item-title
+                  display block
+                  font-size 18px
+                  line-height 38px
+                  color #333
+                  width 90%
+                  overflow hidden
+                  text-overflow ellipsis
+                  white-space nowrap
+                  cursor pointer
+                .item-price
+                  display block
+                  font-size 18px
+                  color #ff9c00
+                  &:before
+                    content '￥'
+                    font-size 12px
+                    color #ff9c00
+                  .unit
+                    font-size 12px
+                    color #ff9c00
+              .item-picture
+                padding 10px 14px 14px 0
+                overflow hidden
+                box-sizing border-box
+                cursor pointer
+                .item-bg
+                  float right
+                  width 180px
+                  height 130px
+                  background-position center
+                  background-size contain
+                  background-repeat no-repeat
+                  transition transform 1s
+                  -moz-transition transform 1s	/* Firefox 4 */
+                  -webkit-transition transform 1s	/* Safari 和 Chrome */
+                  -o-transition transform 1s	/* Opera */
+                  &:hover
+                    transform translateX(-4px)
+                    -webkit-transform translateX(-4px)	/* Safari 和 Chrome */
+                    -moz-transform translateX(-4px)
+                    -o-transform translateX(-4px)
+                .item-bg[lazy=error]
+                  background-size contain
+                .item-bg[lazy=loading]
+                  background-size contain
+              &:nth-child(3)
+                border-right none
+              &:last-child
+                border-right none
+          .default-box
+            width 100%
+            height 100%
+            background-repeat no-repeat
+            background-size cover
+            background-position center
+          .default-box[lazy=loading]
+            background-size auto
+          .default-box[lazy=error]
+            background-size auto
+      .goods-fruits
+        width 100%
+        height auto
+        margin-top 60px
+        .goods-title
+          mainBottomBorder(2px,solid)
+          .title-bg
+            float left
+            width 62px
+            height 36px
+            background url("resource/icon_mian_1.png") no-repeat
+        .goods-content
+          .goods-right
+            .goods-box
+              .goods-item
+                &:first-child
+                  width 470px
+                  .item-titleBox
+                    float left
+                    width 50%
+                    height 100%
+                    padding-left 30px
+                    box-sizing border-box
+                    .item-title
+                      display block
+                      font-size 18px
+                      line-height 38px
+                      margin-top 34px
+                      color #333
+                      width 90%
+                      overflow hidden
+                      text-overflow ellipsis
+                      white-space nowrap
+                      cursor pointer
+                    .item-price
+                      display block
+                      font-size 18px
+                      color #ff9c00
+                      &:before
+                        content '￥'
+                        font-size 12px
+                        color #ff9c00
+                  .item-picture
+                    float right
+                    width 50%
+                    height 100%
+                    cursor pointer
+                    padding 36px 24px 14px 0
+                    box-sizing border-box
+                    .item-bg
+                      float right
+                      width 200px
+                      height 170px
+                      background-position center
+                      background-size cover
+                      background-repeat no-repeat
+                      transition transform 1s
+                      -moz-transition transform 1s	/* Firefox 4 */
+                      -webkit-transition transform 1s	/* Safari 和 Chrome */
+                      -o-transition transform 1s	/* Opera */
+                      &:hover
+                        transform translateX(-4px)
+                        -webkit-transform translateX(-4px)	/* Safari 和 Chrome */
+                        -moz-transform translateX(-4px)
+                        -o-transform translateX(-4px)
+                    .item-bg[lazy=error]
+                      background-size contain
+                    .item-bg[lazy=loading]
+                      background-size contain
+      .goods-forest
+        width 100%
+        height auto
+        margin-top 60px
+        .goods-title
+          border-bottom 2px solid #f7a945
+          .goods-content-title
+            .title-content
+              .title-item
+                &.item-active
+                  border 2px solid #f7a946
+                  border-top 3px solid #f7a946
+                  border-bottom none
+          .title-bg
+            float left
+            width 62px
+            height 36px
+            background url("resource/icon_mian_2.png") no-repeat
+        .goods-content
+          .goods-right
+            .goods-box
+              .goods-item
+                &:first-child
+                  width 470px
+                  .item-titleBox
+                    float left
+                    width 50%
+                    height 100%
+                    padding-left 30px
+                    box-sizing border-box
+                    .item-title
+                      display block
+                      font-size 18px
+                      line-height 38px
+                      margin-top 34px
+                      color #333
+                      width 90%
+                      overflow hidden
+                      text-overflow ellipsis
+                      white-space nowrap
+                      cursor pointer
+                    .item-price
+                      display block
+                      font-size 18px
+                      color #ff9c00
+                      &:before
+                        content '￥'
+                        font-size 12px
+                        color #ff9c00
+                  .item-picture
+                    float right
+                    cursor pointer
+                    width 50%
+                    height 100%
+                    padding 36px 24px 14px 0
+                    box-sizing border-box
+                    .item-bg
+                      float right
+                      width 200px
+                      height 170px
+                      background-position center
+                      background-size cover
+                      background-repeat no-repeat
+                      transition transform 1s
+                      -moz-transition transform 1s	/* Firefox 4 */
+                      -webkit-transition transform 1s	/* Safari 和 Chrome */
+                      -o-transition transform 1s	/* Opera */
+                      &:hover
+                        transform translateX(-4px)
+                        -webkit-transform translateX(-4px)	/* Safari 和 Chrome */
+                        -moz-transform translateX(-4px)
+                        -o-transform translateX(-4px)
+                    .item-bg[lazy=error]
+                      background-size contain
+                    .item-bg[lazy=loading]
+                      background-size contain
+      .goods-agricultural
+        width 100%
+        height auto
+        margin-top 60px
+        .goods-title
+          border-bottom 2px solid #0aa6e8
+          .title-box
+            .title-bg
+              float left
+              width 62px
+              height 36px
+              background url("resource/icon_mian_3.png") no-repeat
+          .goods-content-title
+            .title-content
+              .title-item
+                &.item-active
+                  border 2px solid #0aa6e8
+                  border-top 3px solid #0aa6e8
+                  border-bottom none
+      .goods-livestock
+        width 100%
+        height auto
+        margin-top 60px
+        .goods-title
+          border-bottom 2px solid #f15453
+          .title-box
+            .title-bg
+              float left
+              width 62px
+              height 36px
+              background url("resource/icon_mian_4.png") no-repeat
+          .goods-content-title
+            .title-content
+              .title-item
+                &.item-active
+                  border 2px solid #f15453
+                  border-top 3px solid #f15453
+                  border-bottom none
+
+      .advertisement
+        width 1200px
+        height 80px
+        margin-top 40px
+        .advertisement-bg
+          width 100%
+          height 100%
+          background-position center
+          background-size cover
+          background-repeat no-repeat
+        .advertisement-bg[lazy=loading]
+          background-size auto
+        .advertisement-bg[lazy=error]
+          background-size auto
+
+      .news-content
+        width 100%
+        height auto
+        margin-top 60px
+        .goods-title
+          border-bottom 2px solid #849957
+          .title-box
+            .title-bg
+              float left
+              width 62px
+              height 36px
+              background url("resource/icon_mian_5.png") no-repeat
+          .goods-content-title
+            font-size 14px
+            color #666
+            line-height 50px
+            cursor pointer
+            &:hover
+              mainColor()
+        .news-box
+          width 100%
+          height 381px
+          border 1px solid #e8e8e8
+          border-top none
+          box-sizing border-box
+          background #fff
+          padding 15px 20px 0 16px
+          box-sizing border-box
+          .news-left
+            float left
+            width 965px
+            height auto
+            overflow hidden
+            .news-left-top
+              height 262px
+              .news-letf-big
+                width 590px
+                height 100%
+                float left
+                position relative
+                .news-big
+                  display block
+                  width 100%
+                  height 100%
+                  background-position center
+                  background-size cover
+                  background-repeat no-repeat
+                  cursor pointer
+                .news-big[lazy=loading]
+                  background-size auto
+                .news-big[lazy=error]
+                  background-size auto
+                .news-big-title
+                  position absolute
+                  width 100%
+                  height 46px
+                  padding 0 14px
+                  box-sizing border-box
+                  line-height 46px
+                  left 0px
+                  overflow hidden
+                  text-overflow ellipsis
+                  white-space nowrap
+                  bottom 0px
+                  color #fff
+                  font-size 14px
+                  background rgba(0,0,0,0.3)
+              .news-left-small
+                float left
+                margin-left 10px
+                height 262px
+                width 352px
+                .news-small-item
+                  width 166px
+                  float left
+                  margin 0 10px 10px 0
+                  height 126px
+                  position relative
+                  .news-small
+                    display block
+                    width 100%
+                    height 100%
+                    background-position center
+                    background-size cover
+                    background-repeat no-repeat
+                    cursor pointer
+                  .news-small[lazy=loading]
+                    background-size contain
+                  .news-small[lazy=error]
+                    background-size contain
+                  .news-small-title
+                    position absolute
+                    width 100%
+                    height 30px
+                    padding 0 14px
+                    line-height 30px
+                    left 0px
+                    bottom 0px
+                    overflow hidden
+                    text-overflow ellipsis
+                    white-space nowrap
+                    box-sizing border-box
+                    color #fff
+                    font-size 14px
+                    background rgba(0,0,0,0.3)
+            .news-left-bottom
+              width 100%
+              height 104px
+              padding-top 10px
+              box-sizing border-box
+              .news-bottm-item
+                float left
+                width 286px
+                height 80px
+                margin-right 32px
+                position relative
+                cursor pointer
+                .news-bottom-title
+                  display block
+                  width 100%
+                  height 40px
+                  line-height 40px
+                  font-weight bold
+                  overflow hidden
+                  text-overflow ellipsis
+                  white-space nowrap
+                .news-bottom
+                  line-height 20px
+                  font-size 14px
+                  color #999
+                .more
+                  position absolute
+                  right 0px
+                  bottom 3px
+                  color #849957
+                  font-size 14px
+                  cursor pointer
+                  &:hover
+                    mainColor()
+
+          .news-right
+            float right
+            width 195px
+            .news-right-title
+              width 100%
+              height 26px
+              .title-item
+                float left
+                height 100%
+                width 70px
+                text-align center
+                line-height 24px
+                font-size 14px
+                cursor pointer
+                box-sizing border-box
+                &:last-child
+                  float right
+                &.active
+                  border-bottom 2px solid #849957
+                  color #849957
+            .news-rignt-content
+              width 100%
+              height auto
+              padding-top 10px
+              box-sizing border-box
+              .news-con-box
+                width 100%
+                height auto
+                .news-con-item
+                  width 100%
+                  height 35px
+                  line-height 35px
+                  .title-mark
+                    float left
+                    font-size 14px
+                    width 18px
+                    height 18px
+                    margin-top 8px
+                    line-height 18px
+                    text-align center
+                    margin-right 12px
+                    color #fff
+                    background #5a5a5a
+                    border-radius 50%
+                  .item-con
+                    float left
+                    height 100%
+                    width 165px
+                    overflow hidden
+                    text-overflow ellipsis
+                    white-space nowrap
+                    line-height 35px
+                    font-size 14px
+                    color #4d4d4d
+                    cursor pointer
+                    &:hover
+                      mainColor()
+
+
+                  &:nth-child(1)
+                    .title-mark
+                      background #ff8a0c
+                  &:nth-child(2)
+                    .title-mark
+                      background #ff8a0c
+                  &:nth-child(3)
+                    .title-mark
+                      background #ff8a0c
+      .service-center
+        width 100%
+        height auto
+        margin-top 60px
+        .goods-title
+          border-bottom 2px solid #bd8c25
+          .title-box
+            .title-bg
+              float left
+              width 62px
+              height 36px
+              background url("resource/icon_mian_6.png") no-repeat
+          .goods-content-title
+            font-size 14px
+            color #666
+            line-height 50px
+            cursor pointer
+            &:hover
+              mainColor()
+        .service-box
+          width 100%
+          height 268px
+          background url("resource/img_fuwzhongxin-.jpg") no-repeat center

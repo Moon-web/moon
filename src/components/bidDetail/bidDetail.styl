@@ -1,0 +1,487 @@
+@import "../../common/common.styl"
+.bidDetail-container
+  width 100%
+  height auto
+  margin-top 40px
+  background #f5f5f5
+  .bidDetail-content
+    width 1200px
+    height auto
+    padding-bottom 40px
+    margin 0 auto
+    .bidDetail-top
+      width 100%
+      height 730px
+      border 1px solid #e3e3e3
+      box-sizing border-box
+      padding 40px 75px
+      margin-bottom 40px
+      background #fff
+      .bidDetail-top-left
+        float left
+        width 520px
+        margin-right 60px
+        height 100%
+        .bidDetail-img
+          width 320px
+          height 320px
+          margin 0 auto 50px auto
+          border 1px solid #e3e3e3
+          box-sizing border-box
+          background-size cover
+          background-position center
+          background-repeat no-repeat
+        .bidDetail-img[lazy=error]
+          background-size contain
+        .bidDetail-img[lazy=loading]
+          background-size contain
+        .bidDetail-mark
+          width 100%
+          height 280px
+          border 1px solid #e3e3e3
+          box-sizing border-box
+          overflow hidden
+          .mark-title
+            width 100%
+            height 37px
+            line-height 36px
+            border-bottom 1px solid #e3e3e3
+            box-sizing border-box
+            text-align center
+            font-size 16px
+            color #333
+            background #f2f2f2
+            position relative
+            .mark-num
+              position absolute
+              line-height 36px
+              right 30px
+              font-size 12px
+              .mark-ci
+                font-size 18px
+                color #ff6a00
+          .bidDetail-mark-con
+            width 100%
+            height 241px
+            .bidDetail-mark-con-title
+              width 100%
+              height 37px
+              border-bottom 1px solid #e3e3e3
+              box-sizing border-box
+              padding 0 20px
+              .bidDetail-mark-con-list
+                line-height 36px
+                height 36px
+                width 100%
+                .item
+                  float left
+                  font-size 12px
+                  text-align center
+                  color #333
+                  overflow hidden
+                  text-overflow ellipsis
+                  white-space nowrap
+                  &:nth-child(1)
+                    width 30%
+                  &:nth-child(2)
+                    width 20%
+                  &:nth-child(3)
+                    width 20%
+                  &:nth-child(4)
+                    width 30%
+              .end-list
+                line-height 36px
+                height 36px
+                width 100%
+                .item
+                  float left
+                  font-size 12px
+                  text-align center
+                  color #333
+                  overflow hidden
+                  text-overflow ellipsis
+                  white-space nowrap
+                  &:nth-child(1)
+                    width 10%
+                  &:nth-child(2)
+                    width 30%
+                  &:nth-child(3)
+                    width 20%
+                  &:nth-child(4)
+                    width 20%
+                  &:nth-child(5)
+                    width 20%
+            .bidDetail-mark-content
+              width 100%
+              height 204px
+              .bidDetail-mark-con-list
+                line-height 34px
+                height 34px
+                width 100%
+                box-sizing border-box
+                padding 0 20px
+                .item
+                  float left
+                  font-size 12px
+                  text-align center
+                  color #333
+                  overflow hidden
+                  text-overflow ellipsis
+                  white-space nowrap
+                  &:nth-child(1)
+                    width 30%
+                  &:nth-child(2)
+                    width 20%
+                  &:nth-child(3)
+                    width 20%
+                  &:nth-child(4)
+                    width 30%
+                .item-active
+                  color #ff6a00
+              .end-list
+                line-height 36px
+                height 36px
+                width 100%
+                .item
+                  float left
+                  font-size 12px
+                  text-align center
+                  color #333
+                  overflow hidden
+                  text-overflow ellipsis
+                  white-space nowrap
+                  .end-status
+                    display block
+                    height 20px
+                    width 40px
+                    line-height 20px
+                    margin 8px auto
+                    text-align center
+                    border-radius 2px
+                  .status-success
+                    color #fff
+                    background #ff6a00
+                  .status-fail
+                    border 1px solid #999
+                    box-sizing border-box
+                    line-height 18px
+                    color #999
+                  &:nth-child(1)
+                    width 10%
+                  &:nth-child(2)
+                    width 30%
+                    color #ff6a00
+                  &:nth-child(3)
+                    width 20%
+                    color #ff6a00
+                  &:nth-child(4)
+                    width 20%
+                  &:nth-child(5)
+                    width 20%
+              .bidDetail-mark-content-no
+                width 100%
+                height 36px
+                line-height 36px
+                text-align center
+                color #333333
+                font-size 12px
+                background #e8f7e9
+                margin-top 36px
+
+      .bidDetail-top-right
+        width 460px
+        height 100%
+        float left
+        .bidDetail-top-status
+          .bidDetail-name
+            width 100%
+            font-size 20px
+            color #333
+            overflow hidden
+            margin-bottom 20px
+            position relative
+            z-index 1
+            .bidList-list-name
+              float left
+              width 60%
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
+            .bidList-list-number
+              float left
+              width 40%
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
+          .bidDetail-status
+            width 100%
+            height 30px
+            position relative
+            .status-bg
+              float left
+              height 100%
+              width 80px
+              font-size 14px
+              color #fff
+              line-height 30px
+              text-align center
+            .status-starting
+              background url("resource/icon_state.png") no-repeat center
+            .status-start
+              background url("resource/icon_start.png") no-repeat center
+            .over-time
+              float left
+              height 100%
+              margin-left 10px
+              line-height 30px
+              .over
+                font-size 24px
+                mainColor()
+                padding 0 10px
+            .end
+              font-size 14px
+              color #999
+              margin-left 20px
+            .over-end-bg
+              position absolute
+              width 187px
+              height 147px
+              background url("resource/over-end.png") no-repeat center
+              right -25px
+              top -40px
+          .bidDetail-address
+            width 100%
+            height 56px
+            line-height 56px
+            position relative
+            z-index 1
+            .address
+              float left
+              line-height 56px
+              font-size 16px
+              color #ff6a00
+            .address-detail
+              float left
+              line-height 56px
+              font-size 16px
+              color #ff6a00
+              font-weight bold
+        .bidDetail-con
+          width 100%
+          height 278px
+          background #f2f2f2
+          padding 23px 10px 0 30px
+          box-sizing border-box
+          .bidDetail-con-price
+            width 100%
+            height 44px
+            .bidDetail-con-item
+              float left
+              line-height 44px
+              width 100px
+              font-size 14px
+              color #9a9a9a
+            .bidDetail-con-itemCon
+              float left
+              line-height 44px
+              height 100%
+              font-size 14px
+              color #9a9a9a
+              .money
+                font-size 28px
+                color #ff6a00
+              .unit
+                font-size 12px
+                color #666
+              .changeBtn
+                float left
+                height 24px
+                width 24px
+                border 1px solid #cbcbcb
+                box-sizing border-box
+                line-height 22px
+                text-align center
+                font-size 18px
+                margin-top 10px
+                cursor pointer
+              .changeNum
+                float left
+                height 36px
+                width 120px
+                border 1px solid #cbcbcb
+                box-sizing border-box
+                line-height 34px
+                text-align center
+                font-size 18px
+                text-align center
+                margin 4px 6px 0
+                outline none
+                background none
+            .rule
+              float left
+              height 100%
+              line-height 44px
+              color #9a9a9a
+              font-size 14px
+              margin-left 10px
+              width 130px
+              overflow hidden
+              text-overflow ellipsis
+              white-space nowrap
+          .bidDetail-button-con
+            width 100%
+            height 48px
+            margin-top 36px
+            .bidDetail-button
+              display block
+              margin 0 auto
+              width 220px
+              color #fff
+              line-height 48px
+              height 100%
+              text-align center
+              cursor pointer
+              text-align center
+              font-size 18px
+              mainBack()
+          .bidDetail-con-enroll
+            width 100%
+            padding-right 20px
+            box-sizing border-box
+            height 42px
+            line-height 42px
+            text-align center
+            font-size 22px
+            mainColor()
+            font-weight bold
+            margin-top 45px
+          .bidDetail-con-enroll-num
+            width 100%
+            padding-right 20px
+            box-sizing border-box
+            height 34px
+            line-height 34px
+            font-size 14px
+            color #666
+            text-align center
+          .bidDetail-con-enroll-wait
+            width 100%
+            padding-right 20px
+            box-sizing border-box
+            height 70px
+            line-height 70px
+            font-size 18px
+            text-align center
+            mainColor()
+        .end-con
+          padding 45px 60px
+          box-sizing border-box
+          .bidDetail-con-price
+            .bidDetail-con-item
+              font-size 18px
+              color #666
+              width 135px
+            .bidDetail-con-itemCon
+              .money
+                font-size 22px
+              .unit
+                font-size 18px
+                color #666
+        .bidDetail-describe
+          width 100%
+          height 140px
+          background #fffbe7
+          margin-top 56px
+          padding 15px 20px 0 50px
+          box-sizing border-box
+          .bidDetail-describe-list
+            float left
+            width 50%
+            height 36px
+            line-height 36px
+            .bidDetail-describe-item
+              float left
+              width 80px
+              font-size 12px
+              color #9a9a9a
+            .bidDetail-describe-item-con
+              float left
+              font-size 12px
+              color #666
+    .bidDetail-bottom
+      background #fff
+      width 100%
+      height auto
+      border 1px solid #e3e3e3
+      box-sizing border-box
+      padding 0 80px 50px
+      .bidDetail-bottom-title
+        height 98px
+        line-height 98px
+        font-size 18px
+        color #333
+        font-weight bold
+      .bidDetail-bottom-introduce
+        width 100%
+        height 80px
+        border 1px solid #e3e3e3
+        box-sizing border-box
+        .bidDetail-bottom-list
+          width 100%
+          height 78px
+          padding 0 30px 0 50px
+          box-sizing border-box
+          .bidDetail-bottom-item
+            height 39px
+            width 33%
+            float left
+            font-size 14px
+            .item-title
+              float left
+              width 90px
+              line-height 39px
+              color #999
+            .item-con
+              float left
+              line-height 39px
+              color #333
+              width 200px
+              overflow hidden
+              text-overflow ellipsis
+              whith-space nowrap
+      .bidDetail-bottom-con
+        width 100%
+        height auto
+        padding-right 80px
+        box-sizing border-box
+        text-align center
+        .bidDetail-detail-title
+          display inline-block
+          vertical-align top
+          width 100%
+          font-size 18px
+          padding-left 20px
+          box-sizing border-box
+          border-left 4px solid #19ac27
+          color #333
+          text-align left
+          margin 35px 0 35px 0
+        .bidDetail-detail
+          display block
+          width 100%
+          height auto
+          padding 0 0 40px 0
+          text-indent 2em
+          text-align left
+          font-size 14px
+          color #666
+          color #999
+          line-height 24px
+        .picture-box
+            display inline-block
+            vertical-align top
+            width 100%
+            margin-bottom 30px
+            &:last-child
+              margin-bottom 0
+

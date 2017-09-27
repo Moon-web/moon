@@ -1,0 +1,423 @@
+@import "../../common/common.styl"
+.logistics
+  width 100%
+  height auto
+  .logistics-head
+    width 100%
+    height 440px
+    position relative
+    .banner-wrapper
+      position absolute
+      top 0
+      left 0
+      height 100%
+      width 100%
+      z-index -1
+      overflow hidden
+      .banner-content
+        width 1200px
+        height 100%
+        margin 0 auto
+        .banner-box
+          width 100%
+          height 100%
+          position relative
+          left -360px
+          top 0
+          .banner-contentBox
+            width 1920px
+            height 100%
+            .background-item
+              iBlock()
+              width 100%
+              height 100%
+              background-position center
+              background-size cover
+              background-repeat no-repeat
+            .background-item[lazy=loading]
+              background-size auto
+            .background-item[lazy=error]
+              background-size auto
+
+  .logistics-content
+    width 1200px
+    height auto
+    margin 70px auto
+    .logistics-findcar
+      width 100%
+      height auto
+      overflow hidden
+      .logistics-findcar-left
+        float left
+        width 620px
+        height 395px
+        background url("resource/mian01_L.jpg") no-repeat center
+      .logistics-findcar-right
+        float right
+        width 580px
+        height 395px
+        padding 0 30px
+        box-sizing border-box
+        background #fafafa
+        .logistics-head-center
+          width 100%
+          height 100%
+          position relative
+          .logistics-head-center-title
+            width 100%
+            font-size 14px
+            color #1a1a1a
+            font-weight bold
+            padding-top 30px
+          .search-truck
+            width 100%
+            height auto
+            margin-top 20px
+            float left
+            .entry-box
+              width 100%
+              font-size 0
+              .entry-item
+                width 100%
+                height auto
+                margin-bottom 17px
+                .information
+                  display inline-block
+                  vertical-align top
+                  width 245px
+                  height auto
+                  margin-right 30px
+                  &.datetime
+                    width 100%
+                  &:nth-child(2n+2)
+                    margin-right 0
+                  .title
+                    float left
+                    width 80px
+                    height 100%
+                    line-height 30px
+                    font-size 14px
+                    color #666
+                    margin-right 20px
+                    text-align right
+                    &:before
+                      content '*'
+                      color #f00
+                  .input
+                    float left
+                    width 145px
+                    height 32px
+                    box-sizing border-box
+                    padding 0 10px
+                    overflow hidden
+                    border 1px solid #ccc
+                    input
+                      width 100%
+                      height 100%
+                      font-size 14px !important
+                      color #333 !important
+                      border none !important
+                      background rgba(255,255,255,0) !important
+                      padding 0 !important
+                    .el-date-editor
+                      height 100% !important
+                    .el-input
+                      height 100% !important
+                    .el-input__icon
+                      display none !important
+                    &.picker
+                      position relative
+                      width 420px
+                      &:after
+                        content ''
+                        position absolute
+                        right 10px
+                        top 6px
+                        width 14px
+                        height 14px
+                        z-index 10
+                        background-repeat no-repeat
+                        background-image url("resource/icon_calender_wuliu.png")
+                .tips
+                  width 100%
+                  height auto
+                  margin-top 14px
+                  overflow hidden
+                  .title
+                    float left
+                    width 80px
+                    font-size 14px
+                    text-align right
+                    line-height 30px
+                    color #666
+                    margin-right 20px
+                  .textarea
+                    float left
+                    border 1px solid #ccc
+                    height 62px
+                    color #333
+                    width 420px
+                    line-height 20px
+                    font-size 14px
+                    box-sizing border-box
+                    padding 10px
+                    background-color #fff
+                    margin-top 9px
+            .submit
+              width 100%
+              height auto
+              text-align center
+              .submit-btn
+                display block
+                width 120px
+                height 34px
+                text-align center
+                line-height 34px
+                font-size 16px
+                color #fff
+                margin 0 auto
+                background #ff9c00
+                cursor pointer
+    .logistics-resource
+      width 100%
+      height auto
+      margin-top 70px
+      overflow hidden
+      .goods-resource
+        float left
+        width 680px
+        height auto
+        .goods-resource-title
+          width 100%
+          height 42px
+          box-sizing border-box
+          mainBottomBorder(2px,solid)
+          mainColor()
+          line-height 40px
+          .resource-title
+            float left
+            width 120px
+            text-align center
+            font-size 20px
+            cursor pointer
+            mainBack()
+            color #fff
+          .resource-more
+            float right
+            line-height 40px
+            mainColor()
+            font-size 14px
+            cursor pointer
+        .goods-info
+          width 100%
+          height auto
+          border 1px solid #ccc
+          border-top none
+          box-sizing border-box
+          .goods-car-title
+            width 100%
+            height 48px
+            line-height 47px
+            border-bottom 1px solid #ccc
+            box-sizing border-box
+            background #fafafa
+            .item-wrapper
+              width 100%
+              height 100%
+              .item
+                float left
+                height 100%
+                font-size 14px
+                color #666
+                text-align center
+                line-height 49px
+                box-sizing border-box
+                &:nth-child(1)
+                  width 33%
+                &:nth-child(2)
+                  width 33%
+                &:nth-child(3)
+                  width 34%
+          .goods-carCon
+            width 100%
+            height 475px
+            padding 0 1%
+            overflow hidden
+            box-sizing border-box
+            .item-wrapper
+              width 100%
+              height 48px
+              border-bottom 1px dotted #ccc
+              box-sizing border-box
+              .item
+                height 100%
+                line-height 47px
+                height 100%
+                font-size 14px
+                color #666
+                text-align center
+                box-sizing border-box
+                float left
+                &:nth-child(1)
+                  width 33%
+                &:nth-child(2)
+                  width 33%
+                &:nth-child(3)
+                  width 34%
+      .goods-news
+        float right
+        width 496px
+        height auto
+        .goods-resource-title
+          width 100%
+          height 42px
+          box-sizing border-box
+          mainBottomBorder(2px,solid)
+          mainColor()
+          line-height 40px
+          .resource-title
+            float left
+            width 120px
+            text-align center
+            font-size 20px
+            cursor pointer
+            mainBack()
+            color #fff
+          .resource-more
+            float right
+            line-height 40px
+            mainColor()
+            font-size 14px
+            cursor pointer
+        .goods-newsCon
+          width 100%
+          height auto
+          border 1px solid #ccc
+          border-top none
+          box-sizing border-box
+          .goods-news-title
+            width 100%
+            height 48px
+            line-height 47px
+            border-bottom 1px solid #ccc
+            box-sizing border-box
+            background #fff
+            .item-wrapper
+              width 100%
+              height 100%
+              .item
+                float left
+                height 100%
+                font-size 14px
+                color #666
+                line-height 47px
+                &:nth-child(1)
+                  width 75%
+                  padding-left 10px
+                  box-sizing border-box
+                &:nth-child(2)
+                  width 25%
+                  text-align center
+          .goods-news-Con
+            width 100%
+            height 475px
+            padding 0 1%
+            overflow hidden
+            box-sizing border-box
+            .item-wrapper
+              width 100%
+              height 48px
+              border-bottom 1px dotted #ccc
+              box-sizing border-box
+              line-height 47px
+              .item
+                float left
+                height 100%
+                font-size 14px
+                color #666
+                line-height 47px
+                &:nth-child(1)
+                  width 75%
+                  cursor pointer
+                  padding-left 10px
+                  box-sizing border-box
+                  white-space nowrap
+                  overflow hidden
+                  text-overflow ellipsis
+                  &:hover
+                    mainColor()
+                &:nth-child(2)
+                  width 25%
+                  text-align center
+    .logistics-describe
+      width 100%
+      height auto
+      margin-top 70px
+      .describe-titleBox
+        width 100%
+        height 54px
+        background url("resource/title.png") no-repeat center
+      .describe-contextBox
+        width 100%
+        height auto
+        .describe-contextBox-bg
+          width 100%
+          height 120px
+          background  url("resource/img.jpg") no-repeat center
+          margin 30px 0
+        .describe-context
+          width 100%
+          height auto
+          font-size 15px
+          color #666
+          text-indent 2em
+          line-height 30px
+
+
+    .cooperate-friend
+      width 100%
+      min-height 146px
+      box-sizing box-sizing
+      margin 100px 0
+      position relative
+      .title
+        width 100%
+        height 54px
+        background url("resource/title2.png") no-repeat center
+      .friend-wrapper
+        width 100%
+        height auto
+        border 1px solid #e1e1e1
+        box-sizing border-box
+        overflow hidden
+        margin 30px 0
+        .friend-item
+          float left
+          width 20%
+          height 70px
+          box-sizing border-box
+          padding 10px 0
+          &:last-child
+            .item
+              border-right none
+          .item
+            float left
+            width 100%
+            height 100%
+            padding 0 10px
+            box-sizing border-box
+            border-right 1px dotted #e1e1e1
+            background-position center
+            background-size contain
+            background-repeat no-repeat
+
+
+
+
+
+
+
+
+
+
+

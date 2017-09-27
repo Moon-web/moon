@@ -1,0 +1,74 @@
+@import "../../../common/common.styl"
+.newsDetail
+  width 100%
+  height auto
+  .news-path
+    width 100%
+    height auto
+    color #333
+    font-size 0
+    margin-bottom 16px
+    .path-item
+      display inline-block
+      vertical-align top
+      width auto
+      height auto
+      font-size 14px
+      letter-spacing 1px
+      color #333
+      cursor default
+      &:nth-child(2)
+        cursor pointer
+  .news-detail-context
+    width 100%
+    height auto
+    .news-detail-name
+      display table
+      width 100%
+      min-height 100px
+      overflow hidden
+      text-align center
+      line-height 35px
+      color #fff
+      font-size 24px
+      font-weight bold
+      background-repeat no-repeat
+      letter-spacing 2px
+      background-image url("../resource/img_D.jpg")
+      background-size cover
+      box-sizing border-box
+      padding 0 15px
+      .name-wrapper
+        display table-cell
+        vertical-align middle
+    .news-detail-text
+      width 100%
+      height auto
+      background-color #fff
+      box-sizing border-box
+      padding 14px 24px 50px 14px
+      .news-other-information
+        display inline-block
+        vertical-align top
+        width 100%
+        height auto
+        margin-top 14px
+        margin-bottom 20px
+        overflow hidden
+        font-size 14px
+        color #999
+        .source
+          float left
+        .createdTime
+          float right
+      .news-detail-describe
+        display inline-block
+        width 100%
+        height auto
+        font-size 16px !important
+        color #333 !important
+        line-height 25px
+        .main-picture
+          display block
+          width 100%
+          text-align center

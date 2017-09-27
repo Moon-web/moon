@@ -1,0 +1,363 @@
+@import "../../common/common.styl"
+.inform
+  width 1200px
+  height 30px
+  border 1px solid #f6cc81
+  box-sizing border-box
+  margin 0 auto
+  padding-left 40px
+  position relative
+  background #fffdee url("resource/icon_tishi.png") no-repeat 15px center
+  p
+    font-size 14px
+    line-height 28px
+    color #999
+  .information-colse
+    position absolute
+    right 0px
+    width 40px
+    height 100%
+    top 0
+    cursor pointer
+    background url("resource/icon_guanbi.png") no-repeat center
+.register-top
+  width 100%
+  height 100px
+  box-sizing border-box
+  padding 10px 0
+  .top
+    width 1200px
+    height 100%
+    margin 0 auto
+    .left
+      width 260px
+      height 100%
+      cursor pointer
+      float left
+      background url("resource/LOGO.png") no-repeat center
+    .right
+      float right
+      height 100%
+      padding-right 50px
+.register-con
+  padding 0px 0 30px 0
+  width 1200px
+  box-sizing border-box
+  margin 0 auto
+  .firstBg
+    width 600px
+    margin 60px auto 0 auto
+    height 58px
+    line-height 90px
+    span
+      float left
+      width 200px
+      height 100%
+      text-align center
+      font-size 14px
+    .stepOne
+      background url("resource/icon_1_down.png") no-repeat top center
+      color #90e198
+    .stepTwo
+      background url("resource/icon_2_wei.png") no-repeat top center
+      color #ccc
+    .stepLast
+      background url("resource/icon_3_wei.png") no-repeat top center
+      color #ccc
+  .secondBg
+    width 600px
+    margin 60px auto 0 auto
+    height 58px
+    line-height 90px
+    span
+      float left
+      width 200px
+      height 100%
+      text-align center
+      font-size 14px
+    .stepOne
+      background url("resource/icon_1_up.png") no-repeat top center
+      color #90e198
+    .stepTwo
+      background url("resource/icon_2_down.png") no-repeat top center
+      color #19ac27
+    .stepLast
+      background url("resource/icon_3_wei.png") no-repeat top center
+      color #ccc
+  .thirdBg
+    width 600px
+    margin 60px auto 0 auto
+    height 58px
+    line-height 90px
+    span
+      float left
+      width 200px
+      height 100%
+      text-align center
+      font-size 14px
+    .stepOne
+      background url("resource/icon_1_up.png") no-repeat top center
+      color #90e198
+    .stepTwo
+      background url("resource/icon_2_up.png") no-repeat top center
+      color #90e198
+    .stepLast
+      background url("resource/icon_3_down.png") no-repeat top center
+      color #90e198
+  .information
+    height 50px
+    width 440px
+    margin 30px auto 0 auto
+    position relative
+    .selesct-con
+      position absolute
+      left 0px
+      top 0px
+      height 100%
+      width 78px
+      border 1px solid #cccccc
+    .phone
+      position absolute
+      top 0px
+      left 78px
+      height 100%
+      width 362px
+      padding-left 10px
+      box-sizing border-box
+      border 1px solid #cccccc
+      border-left none
+      outline none
+      font-size 16px
+    input::-webkit-outer-spin-button
+            -webkit-appearance none
+    input::-webkit-inner-spin-button
+            -webkit-appearance none
+    input[type="number"]
+      -moz-appearance textfield
+    .wran
+      position absolute
+      left 0px
+      top 50px
+      color #f00
+      line-height 30px
+      margin-left 2%
+    .pwWran
+      float left
+      line-height 30px
+      color #f00
+      margin-left 2%
+    .surepwWran
+      float left
+      line-height 30px
+      color #f00
+      margin-left 2%
+    .code
+      width 280px
+      float left
+      margin-right 10px
+      padding-left 10px
+      height 100%
+      box-sizing border-box
+      border 1px solid #cccccc
+      outline none
+    .yanCode
+      float left
+      color #f00
+      line-height 30px
+      margin-left 2%
+    .left
+      float left
+      height 100%
+      width 110px
+    .submit
+      width 150px
+      height 100%
+      float left
+      line-height 48px
+      border 1px solid #cccccc
+      color #ccc
+      text-align center
+      background none
+      cursor pointer
+    .submitBg
+      background #19ac27
+      color #fff
+      border none
+    .changeSub
+      background #e1e1e1
+  .password
+    width 100%
+    height 100%
+    padding-left 10px
+    box-sizing border-box
+    border 1px solid #cccccc
+  .btn
+    width 440px
+    height 58px
+    margin 30px auto 50px auto
+    .sureBtn
+      width 100%
+      height 100%
+      background #19ac27
+      padding 0
+      border none
+      outline none
+      color #f5f6f7
+      cursor pointer
+.changeSuccess
+  width 440px
+  height 50px
+  line-height 50px
+  background url("resource/icon_xiaolian.png") no-repeat left center
+  margin 100px auto
+  font-size 20px
+  color #333
+  font-weight bold
+  padding-left 80px
+  box-sizing border-box
+.emailReset
+  width 500px
+  height auto
+  margin 0 auto
+  margin-bottom 80px
+  .register-content
+    width 100%
+    height auto
+    .submit-content
+      width 100%
+      height auto
+      .submit-ul
+        width 100%
+        height auto
+        .submit-list
+          width 100%
+          height 36px
+          font-size 0
+          margin-top 30px
+          line-height 36px
+          .title
+            iBlock()
+            width 15%
+            height 100%
+            text-align right
+            font-size 16px
+            color #333
+            margin-right 2%
+            &.necessary
+              &:before
+                content '*'
+                color #f00
+                iBlock()
+                margin-top 3px
+                margin-right 3px
+          .information
+            iBlock()
+            width 300px
+            height 100%
+            font-size 14px
+            color #333
+            .realInput
+              width 100%
+              height 100%
+              box-sizing border-box
+              text-indent 10px
+              border 1px solid #cccccc
+            .checkCode
+              iBlock()
+              width 100px
+              height 100%
+              box-sizing border-box
+              margin-right 15px
+              text-indent 10px
+              font-size 14px
+              border 1px solid #cccccc
+            .checkPicture
+              iBlock()
+              width 100px
+              height 100%
+              box-sizing border-box
+              border 1px solid #e1e1e1
+              cursor pointer
+              img
+                width 100%
+                height 100%
+
+
+      .submit-button
+        width 100%
+        .information
+          box-sizing border-box
+          padding-left 17%
+          margin-top 30px
+          .blue
+            color #0099ff
+            &:hover
+              mainColor()
+              cursor pointer
+        .confirm
+          height 36px
+          margin-top 30px
+          .confirm-con
+            float left
+            width 60%
+            height 100%
+            margin-left 17%
+            .commit
+              width 100%
+              height 100%
+              background #0099ff
+              text-align center
+              line-height 36px
+              color #fff
+              border none
+              border-radius 4px
+              cursor pointer
+              font-size 16px
+        .find
+          height 36px
+          margin-top 20px
+          .find-con
+            float left
+            height 100%
+            width 39%
+            box-sizing border-box
+            padding-left 17%
+            overflow hidden
+            .have
+              float left
+              height 100%
+              line-height 36px
+              margin-left 20px
+              cursor pointer
+            .findpw
+              float right
+              height 100%
+              line-height 36px
+              color #0099ff
+              &:hover
+                mainColor()
+                cursor pointer
+
+
+
+
+
+.changeResetPassType
+  width 55%
+  margin 0 auto
+  font-size 16px
+  color #666
+  text-align right
+  margin-top 20px
+  &.p
+    width 440px
+  .operation
+    display inline-block
+    vertical-align top
+    width auto
+    padding 10px 15px
+    cursor pointer
+    font-weight 400
+
+
+

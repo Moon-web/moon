@@ -1,0 +1,134 @@
+@import "../../common/common.styl"
+.nav-wrapper
+  width 220px
+  height 414px
+  position relative
+  .nav-item
+    width 100%
+    height 138px
+    background-color rgba(58,55,54,0.8)
+    cursor pointer
+    border-bottom 1px solid rgba(255,255,255,0.2)
+    font-size 0
+    box-sizing border-box
+    &.focus
+      background-color #ffab2b
+      .little-title
+        color #fff !important
+    &:last-child
+      border-bottom none
+    .nav-item-icon
+      display inline-block
+      vertical-align top
+      width 66px
+      height 100%
+      margin-left 18px
+      .icon
+        display inline-block
+        vertical-align top
+        width 100%
+        height 66px
+        border-radius 50%
+        background-position center
+        background-repeat no-repeat
+        margin-top 36px
+      &.first
+        .icon
+          &.normal
+            background-color rgba(255,255,255,0.7)
+            background-image url("resource/icon_1_1.png")
+          &.focus
+            background-color rgba(255,255,255,1)
+            background-image url("resource/icon_1_1down.png")
+      &.second
+        .icon
+          &.normal
+            background-color rgba(255,255,255,0.7)
+            background-image url("resource/icon_1_2.png")
+          &.focus
+            background-color rgba(255,255,255,1)
+            background-image url("resource/icon_1_2down.png")
+      &.third
+        .icon
+          &.normal
+            background-color rgba(255,255,255,0.7)
+            background-image url("resource/icon_1_3.png")
+          &.focus
+            background-color rgba(255,255,255,1)
+            background-image url("resource/icon_1_3down.png")
+    .nav-item-content
+      display inline-block
+      vertical-align top
+      width 124px
+      height 100%
+      margin-left 12px
+      .large-title
+        display inline-block
+        vertical-align top
+        width 100%
+        height 20px
+        font-size 20px
+        color #fff
+        margin-top 45px
+        letter-spacing 5px
+        line-height 1em
+        overflow hidden
+        &:after
+          content ''
+          float right
+          width 6px
+          height 13px
+          margin-top 4px
+          background-repeat no-repeat
+          background-position center
+          background-image url("resource/icon_jiru.png")
+          margin-right 18px
+      .little-title
+        display inline-block
+        vertical-align top
+        width 100%
+        font-size 14px
+        line-height 1em
+        color #9c9b9b
+        margin-top 18px
+        .little-tag
+          display inline-block
+          vertical-align top
+          margin-right 8px
+          &:last-child
+            margin-right 0
+    &.searchGoods
+      .icon
+        background-image url("resource/icon_1_1.png")
+    &.searchLogistic
+      .icon
+        background-image url("resource/icon_1_2.png")
+    &.searchFinance
+      .icon
+        background-image url("resource/icon_1_3.png")
+  .searchGoods-wrapper
+    position absolute
+    left 220px
+    top 0
+    width 452px
+    height 414px
+    background-color #fff
+    box-sizing border-box
+    border 1px solid #e1e1e1
+    z-index -1
+    font-size 0
+    padding 20px 24px
+    .searchGoods-title
+      font-weight bold
+      font-size 14px
+      color #333
+      margin-bottom 10px
+    .goodsName-item
+      iBlock()
+      font-size 12px
+      color #4d4d4d
+      margin-right 16px
+      margin-bottom 8px
+      cursor pointer
+      &:hover
+        mainColor()

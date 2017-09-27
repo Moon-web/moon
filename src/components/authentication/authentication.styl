@@ -1,0 +1,285 @@
+@import "../../common/common.styl"
+.authentication
+  width 100%
+  height auto
+  font-family "Microsoft Yahei"
+  .authentication-head
+    width 100%
+    height 90px
+    background-color #fff
+    border-bottom 1px solid #e1e1e1
+    .head-center
+      width 1000px
+      height 100%
+      margin 0 auto
+      overflow hidden
+      .head-logo
+        float left
+        width auto
+        height 100%
+        font-size 0
+        .logo
+          iBlock()
+          width 211px
+          height 100%
+          background-repeat no-repeat
+          background-position center
+          background-image url("resource/LOGO.png")
+          cursor pointer
+        .text
+          iBlock()
+          width auto
+          font-size 16px
+          line-height 1em
+          padding-left 12px
+          color #444
+          border-left 2px solid #444
+          font-weight bold
+          margin-top 48px
+          margin-left 14px
+      .head-link
+        float right
+        width auto
+        height 100%
+        font-size 0
+        .link-wrapper
+          iBlock()
+          width auto
+          height 20px
+          font-size 14px
+          line-height 20px
+          color #666
+          margin-top 48px
+          cursor pointer
+          &:before
+            content ''
+            iBlock()
+            width 20px
+            height 20px
+            background-repeat no-repeat
+            background-position center
+            background-image url("resource/icon_fanhuishouye.png")
+            margin-right 8px
+
+  .authentication-wrapper
+    width 100%
+    height auto
+    background-color #fafafa
+    overflow hidden
+    .authentication-content
+      width 1000px
+      height auto
+      margin 0 auto
+      margin-top 40px
+      margin-bottom 88px
+      background-color #fff
+      .bread-nav
+        width 100%
+        height 60px
+        .nav-ul
+          width 100%
+          height 100%
+          overflow hidden
+          .nav-item
+            float left
+            height 100%
+            text-align center
+            background-repeat no-repeat
+            background-position center
+            font-size 0
+            .icon
+              iBlock()
+              width 39px
+              height 100%
+              background-position center right
+              background-repeat no-repeat
+              margin-right 20px
+            .text
+              iBlock()
+              width auto
+              height 100%
+              line-height 60px
+              color #fff
+              font-size 16px
+              letter-spacing 2px
+            &:nth-child(1)
+              width 351px
+              background-image url("resource/img_bg_1down.png")
+              .icon
+                background-image url("resource/icon_renzhen_1.png")
+            &:nth-child(2)
+              width 351px
+              margin-left -19px
+              background-image url("resource/img_bg_2up.png")
+              .icon
+                background-image url("resource/icon_renzhen_2.png")
+              &.active
+                background-image url("resource/img_bg_2down.png")
+            &:nth-child(3)
+              width 336px
+              margin-left -19px
+              background-image url("resource/img_bg_3up.png")
+              .icon
+                background-image url("resource/icon_renzhen_3.png")
+              &.active
+                background-image url("resource/img_bg_3down.png")
+    .authentication-box
+      width 100%
+      min-height 1210px
+      background-color #fff
+      padding-top 50px
+      padding-bottom 100px
+      box-sizing border-box
+      .submit-wrapper
+        width 520px
+        height auto
+        margin 0 auto
+        box-sizing border-box
+        .submit-item
+          width 100%
+          height auto
+          font-size 0
+          margin-bottom 10px
+          .title
+            iBlock()
+            width 125px
+            height 40px
+            line-height 40px
+            color #333
+            font-size 14px
+            text-align right
+            &:before
+              content '*'
+              iBlock()
+              color #f35833
+              margin-top 3px
+              font-size 14px
+              margin-right 6px
+            &.unnecessary
+              &:before
+                content ''
+          .entry
+            iBlock()
+            width 395px
+            height auto
+            box-sizing border-box
+            padding-left 18px
+            font-size 14px
+            input[type='text']
+              width 100%
+              height 40px
+              box-sizing border-box
+              border 1px solid #e1e1e1
+              padding 0 14px
+              font-size 14px
+              color #666
+              border-radius 1px
+              &.concat1
+                width 95px
+              &.concat2
+                width 267px
+            .concat-symbol
+              height 100%
+              text-align center
+              line-height 40px
+              color #666
+            .normal-select
+              width 100%
+              height 40px
+              box-sizing border-box
+              padding 0 14px
+              border 1px solid #e1e1e1
+              color #666
+              border-radius 1px
+            .threeClass-wrapper
+              iBlock()
+              width 100%
+              height 40px
+            .upload-wrapper
+              iBlock()
+              width 100%
+              height 170px
+              overflow hidden
+              position relative
+              .warn
+                position absolute
+                color #999
+                font-size 12px
+                left 0
+                bottom 0
+            .company-des
+              width 377px
+              height 160px
+              box-sizing border-box
+              border 1px solid #e1e1e1
+              border-radius 1px
+              padding 10px 14px
+              font-family '微软雅黑'
+              font-size 14px
+              outline none
+              resize none
+              color #666
+      .submit-button
+        width 100%
+        height auto
+        font-size 0
+        margin-top 20px
+        .button
+          iBlock()
+          width 377px
+          height 40px
+          line-height 40px
+          background-color #ff9c00
+          color #fff
+          text-align center
+          border-radius 3px
+          font-size 16px
+          letter-spacing 2px
+          margin-left 376px
+          cursor pointer
+          -webkit-user-select: none
+          -moz-user-select: none
+          -ms-user-select: none
+          user-select: none
+
+      .success-wrapper
+        width 100%
+        height auto
+        text-align center
+        font-size 0
+        .success-content
+          width auto
+          height auto
+          margin-top 110px
+          font-size 20px
+          color #333
+          font-weight bold
+          letter-spacing 1px
+          &:before
+            content ''
+            iBlock()
+            width 46px
+            height 46px
+            margin-right 15px
+            background-repeat no-repeat
+            background-position center
+            background-image url("resource/icon_xiaolian.png")
+            margin-top -12px
+        .success-link
+          iBlock()
+          width auto
+          height auto
+          margin-top 35px
+          .link
+            iBlock()
+            font-size 14px
+            color #fff
+            padding 10px 25px
+            border-radius 3px
+            mainBack()
+            cursor pointer
+            &:nth-child(1)
+              margin-right 30px
+
+
+

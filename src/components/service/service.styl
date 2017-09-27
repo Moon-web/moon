@@ -1,0 +1,111 @@
+@import "../../common/common.styl"
+.swiper-wrapper
+  width 100%
+  height 440px
+  position relative
+  .banner-wrapper
+    position absolute
+    top 0
+    left 0
+    height 100%
+    width 100%
+    z-index -1
+    overflow hidden
+    .banner-content
+      width 1200px
+      height 100%
+      margin 0 auto
+      .banner-box
+        width 100%
+        height 100%
+        position relative
+        left -360px
+        top 0
+        .banner-contentBox
+          width 1920px
+          height 100%
+          .background-item
+            iBlock()
+            width 100%
+            height 100%
+            background-position center
+            background-size cover
+            background-repeat no-repeat
+          .background-item[lazy=loading]
+            background-size auto
+          .background-item[lazy=error]
+            background-size auto
+.service-container
+  width 1200px
+  height auto
+  margin 0 auto
+  padding-top 80px
+  box-sizing border-box
+  .service-item
+    width 100%
+    height 300px
+    margin-bottom 60px
+    .item-left
+      float left
+      height 100%
+      width 580px
+      background-size cover
+      background-position center
+      background-repeat no-repeat
+    .item-left[lazy=error]
+      background-size auto
+    .item-left[lazy=loading]
+      background-size auto
+    .item-right
+      width 578px
+      float right
+      height 100%
+      position relative
+      .item-title-box
+        width 100%
+        height auto
+        position relative
+        .item-left
+          position absolute
+          width 118px
+          height 2px
+          mainBack()
+          left 0px
+          top 50%
+          margin-top -1px
+        .item-right
+          position absolute
+          width 118px
+          height 2px
+          mainBack()
+          right 0px
+          top 50%
+          margin-top -1px
+        .item-title
+          width 100%
+          height 68px
+          font-size 28px
+          text-align center
+          line-height 68px
+          mainColor()
+      .item-con
+        width 100%
+        height auto
+        line-height 30px
+      .look-detail
+        display block
+        width 160px
+        height 46px
+        mainBack()
+        text-align center
+        line-height 46px
+        color #fff
+        font-size 18px
+        position absolute
+        left 50%
+        margin-left -80px
+        bottom 0px
+      .active
+        cursor pointer
+
+

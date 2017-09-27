@@ -1,0 +1,193 @@
+@import "../../../common/common.styl"
+.newsItemWrapper
+  width 100%
+  height auto
+  .header-picture-news
+    width 100%
+    height 100%
+    position relative
+    overflow hidden
+    cursor pointer
+    background #fff
+    .news-img
+      display block
+      width 100%
+      height 100%
+      background-size cover
+      background-repeat no-repeat
+      background-position center
+    .news-img[lazy=error]
+      background-size auto
+    .news-img[lazy=loading]
+      background-size auto
+    .title
+      position absolute
+      bottom 0
+      left 0
+      background-color rgba(0,0,0,0.5)
+      color #fff
+      display block
+      width 100%
+      box-sizing border-box
+      padding 13px 15px
+      overflow hidden
+      limit()
+  .news-header
+    width 100%
+    height auto
+    overflow hidden
+    margin-bottom 40px
+    .news-banner
+      width 100%
+      height 322px
+      background-color #fff
+      .el-carousel__indicators
+        bottom 45px !important
+      .background-item
+        iBlock()
+        width 100%
+        height 100%
+        background-position center
+        background-size cover
+        background-repeat no-repeat
+        position relative
+        .advertisement-name
+          position absolute
+          bottom 0
+          left 0
+          background-color rgba(0,0,0,0.5)
+          color #fff
+          display block
+          width 100%
+          box-sizing border-box
+          padding 13px 15px
+          overflow hidden
+          limit()
+      .background-item[lazy=loading]
+        background-size auto
+      .background-item[lazy=error]
+        background-size auto
+    .huge-picture-news
+      width 572px
+      height 322px
+      float left
+      font-size 16px
+    .little-picture-news
+      width 260px
+      height auto
+      float right
+      .little-news-item
+        width 100%
+        height 156px
+        font-size 14px
+        margin-bottom 10px
+        &:last-child
+          margin-bottom 0
+
+  .news-item-content
+    width 100%
+    height auto
+    .item-content-ul
+      width 100%
+      height auto
+      .news-item-list
+        width 100%
+        height 196px
+        background-color #fff
+        box-sizing border-box
+        padding 14px 36px 14px 14px
+        overflow hidden
+        margin-bottom 20px
+        cursor pointer
+        .news-picture
+          width 300px
+          height 168px
+          overflow hidden
+          float left
+          position relative
+          .news-img
+            display block
+            width 100%
+            height 100%
+            background-size cover
+            background-repeat no-repeat
+            background-position center
+          .news-img[lazy=error]
+            background-size auto
+          .news-img[lazy=loading]
+            background-size auto
+          .news-type
+            position absolute
+            padding 5px 11px
+            font-size 14px
+            color #fff
+            border-radius 15px
+            top 12px
+            left 12px
+            z-index 2
+            background-color rgba(0,0,0,0.5)
+        .news-context
+          width 470px
+          height 100%
+          float right
+          font-size 0
+          position relative
+          .news-title
+            display inline-bloc
+            vertical-align top
+            width 100%
+            height 26px
+            line-height 26px
+            font-size 16px
+            color #333
+            limit()
+            &:before
+              content ''
+              display inline-block
+              vertical-align top
+              width 26px
+              height 26px
+              background-repeat no-repeat
+              background-position center
+              background-image url("../resource/icon_xinwen.png")
+              margin-right 10px
+
+
+          .news-describe
+            display inline-block
+            width 100%
+            height auto
+            line-height 22px
+            font-size 14px
+            margin-top 16px
+            color #666
+
+          .news-other-information
+            display inline-block
+            width 100%
+            height auto
+            position absolute
+            bottom 16px
+            left 0
+            overflow hidden
+            .source
+              width auto
+              float left
+              font-size 14px
+              color #666
+              .tag
+                color #333
+            .createdTime
+              float right
+              font-size 14px
+              color #999
+    .load-more
+      width 200px
+      height 30px
+      background-color #e1e1e1
+      box-sizing border-box
+      border 1px solid #ccc
+      text-align center
+      line-height 28px
+      font-size 14px
+      color #333

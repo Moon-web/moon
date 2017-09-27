@@ -1,0 +1,338 @@
+@import "../../common/common.styl"
+
+.provincial-wrapper
+  width 100%
+  height auto
+  .swiper-wrapper
+    width 100%
+    height 960px
+    position relative
+    .banner-wrapper
+      position absolute
+      top 0
+      left 0
+      height 100%
+      width 100%
+      z-index 0
+      overflow hidden
+      .banner-content
+        width 1200px
+        height 100%
+        margin 0 auto
+        .banner-box
+          width 100%
+          height 100%
+          position relative
+          left -360px
+          top 0
+          .banner-contentBox
+            width 1920px
+            height 100%
+            .background-item
+              iBlock()
+              width 100%
+              height 100%
+              background-position center
+              background-size cover
+              background-repeat no-repeat
+              &[lazy=loading]
+                background-size auto
+              &[lazy=error]
+                background-size auto
+      .click-btn
+        display none
+      &:hover
+        .click-btn
+          display block
+        .swiper-pagination
+          bottom 10px
+          left 50%
+
+  .provincial-container
+    width 100%
+    height auto
+    .center-title
+      width 100%
+      height 240px
+      background-color #fdf6dc
+      font-size 0
+      text-align center
+      .title-header
+        iBlock()
+        width 1100px
+        height 100%
+        position relative
+        .title-text
+          iBlock()
+          width 468px
+          height 120px
+          margin-top 60px
+          background-repeat no-repeat
+          background-position center
+          &.product
+            background-image url("resource/head_lf.png")
+          &.corporate
+            background-image url("resource/head_2f.png")
+        .title-more
+          cursor pointer
+          position absolute
+          right 71px
+          top 50%
+          margin-top -33px
+          iBlock()
+          width 205px
+          height 67px
+          background-repeat no-repeat
+          background-position center
+          background-image url("resource/button_ckgd.png")
+
+    .provincial-box
+      width 100%
+      height auto
+      .provincial-banned
+        width 100%
+        height auto
+        font-size 0
+        text-align center
+        .banned
+          iBlock()
+          width 100%
+          height 560px
+          &:nth-child(odd)
+            background-color #fdf6dc
+            .banned-center
+              .brand-itemBox
+                float left
+              .brand-itemTitle
+                float left
+                padding 130px 0 0 100px
+                text-align left
+                .itemTitle-Name
+                  color #19ac27
+                .itemTitle-company
+                  background-color #19ac27
+                .itemTitle-price
+                  .brand-Price
+                    background-image url("resource/icon_jbj_1.png")
+          &:nth-child(even)
+            background-color #ecfff9
+            .banned-center
+              .brand-itemBox
+                float right
+              .brand-itemTitle
+                text-align right
+                float left
+                padding 130px 100px 0 0
+                .itemTitle-Name
+                  color #e06f01
+                .itemTitle-company
+                  background-color #e06f01
+                .itemTitle-price
+                  .brand-Price
+                    background-image url("resource/icon_jbj_2.png")
+          .banned-center
+            iBlock()
+            width 1100px
+            height 560px
+            overflow hidden
+            .brand-itemBox
+              iBlock()
+              width 400px
+              height 100%
+              background-position center
+              background-repeat no-repeat
+              background-size contain
+              &[lazy=loading]
+                background-size auto
+              &[lazy=error]
+                background-size auto
+            .brand-itemTitle
+              iBlock()
+              width 700px
+              height 100%
+              box-sizing border-box
+              .itemTitle-Name
+                iBlock()
+                limit()
+                width 600px
+                font-size 42px
+                font-weight bold
+              .itemTitle-adr
+                iBlock()
+                width 100%
+                font-size 24px
+                color #d9482c
+                margin-top 40px
+                letter-spacing 5px
+                .brand-itemAdd
+                  iBlock()
+                  width auto
+                  height 56px
+                  line-height 56px
+                  margin-right 40px
+                  &:after
+                    content ''
+                    iBlock()
+                    width 86px
+                    height 100%
+                    background-repeat no-repeat
+                    background-position center
+                    background-image url("resource/img_biaozhi.png")
+              .itemTitle-company
+                iBlock()
+                margin-top 40px
+                width auto
+                height 42px
+                color #fff
+                font-size 24px
+                box-sizing border-box
+                padding 0 22px
+                line-height 42px
+                letter-spacing 3px
+              .itemTitle-price
+                iBlock()
+                width 100%
+                height auto
+                margin-top 24px
+                .brand-Price
+                  iBlock()
+                  width 161px
+                  height 90px
+                  background-repeat no-repeat
+                  background-position center
+                  background-size cover
+                  text-align center
+                  line-height 90px
+                  font-size 30px
+                  color #fff
+                .brand-itemPrice
+                  iBlock()
+                  margin-left 32px
+                  width auto
+                  height auto
+                  font-size 36px
+                  color #e03c1d
+                  line-height 124px
+                  .tag
+                    iBlock()
+                    font-size 80px
+                    line-height 100px
+                    color #e03c1d
+    .center-box
+      width 100%
+      padding 70px 0 40px 0
+      background-color #fdf6dc
+      .brand-list
+        width 1200px
+        height auto
+        overflow hidden
+        margin 0 auto
+        .brand-item
+          width 388px
+          height 458px
+          float left
+          margin-right 12px
+          margin-bottom 30px
+          background-repeat no-repeat
+          background-position center
+          background-image url("resource/icon_juxing.png")
+          border-radius 7px
+          text-align center
+          &:last-child
+            margin-right 0
+          .item-center
+            iBlock()
+            width 370px
+            height 440px
+            .brand-itemBox
+              width 100%
+              height 250px
+              box-sizing border-box
+              padding 0 50px
+              background-repeat no-repeat
+              background-position center
+              background-size contain
+              overflow hidden
+              &[lazy=loading]
+                background-size auto
+              &[lazy=error]
+                background-size auto
+            .brand-itemTitle
+              width 100%
+              padding 25px 0
+              text-align center
+              font-size 22px
+              color #333
+              border-bottom 2px solid #ebebeb
+            .brand-button
+              width 100%
+              height 116px
+              text-align center
+              line-height 116px
+              .detail
+                iBlock()
+                cursor pointer
+                width 202px
+                height 48px
+                background-color #19ac27
+                text-align center
+                line-height 48px
+                color #fff
+                font-size 18px
+                border-radius 25px
+                margin-top 26px
+
+.custom-service
+  position fixed
+  right 20px
+  bottom  100px
+  width 140px
+  height auto
+  background-color #fff
+  font-size 0
+  z-index 99
+  box-shadow 4px 0px 7px #e1e1e1
+  .custom-ul
+    width 100%
+    height auto
+    .custom-list
+      width 100%
+      height 140px
+      font-size 0
+      cursor pointer
+      &:nth-child(1)
+        &:hover
+          background-color #19ac27
+          .icon
+            background-image url("resource/icon_chanpin_bai.png")
+          .text
+            color #fff
+        .icon
+          background-image url("resource/icon_chanpin.png")
+        .text
+          color #19ac27
+
+      &:nth-child(2)
+        &:hover
+          background-color #19ac27
+          .icon
+            background-image url("resource/icon_qiye_bai.png")
+          .text
+            color #fff
+        .icon
+          background-image url("resource/icon_qiye.png")
+        .text
+          color #19ac27
+      .icon
+        iBlock()
+        width 100%
+        height 100px
+        background-repeat no-repeat
+        background-position center
+      .text
+        iBlock()
+        width 100%
+        font-size 14px
+        color #19ac27
+        text-align center
+

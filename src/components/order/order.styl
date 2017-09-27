@@ -1,0 +1,846 @@
+@import "../../common/common.styl"
+.order
+  margin 0 auto
+  width 1000px
+  margin-bottom 50px
+  .order-top
+    width 100%
+    height 96px
+    .top-left
+      float left
+      height 100%
+      width 300px
+      background url("resource/logoblack.png") no-repeat left center
+      cursor pointer
+    .top-right
+      float right
+      height 100%
+      width 340px
+      .check
+        float left
+        height 46px
+        margin-top 50px
+        width 145px
+        font-size 12px
+        color #2c9cf0
+        line-height 66px
+        text-align center
+        background url("resource/icon_1_down.png") no-repeat center top
+      .checkNext
+        float left
+        height 46px
+        margin 50px 0 0 0
+        width 145px
+        font-size 12px
+        color #ccc
+        text-align center
+        line-height 66px
+        background url("resource/icon_2_up.png") no-repeat center top
+  .information
+    width 100%
+    height 30px
+    border 1px solid #f5cd80
+    box-sizing border-box
+    background #fefeed
+    margin 10px 0
+    position relative
+    .information-content
+      height 100%
+      line-height 26px
+      padding-left 50px
+      box-sizing border-box
+      font-size 12px
+      color #999
+      background url("resource/icon_tishi.png") no-repeat 15px center
+  .information-colse
+    position absolute
+    right 0px
+    width 40px
+    height 100%
+    top 0
+    cursor pointer
+    background url("resource/icon_guanbi.png") no-repeat center
+  .order-center
+    width 100%
+    height auto
+    overflow hidden
+    .order-title
+      height 56px
+      line-height 56px
+      color #333
+      font-size 16px
+      padding-left 20px
+      box-sizing border-box
+    .order-detail
+      width 100%
+      overflow hidden
+      border 1px solid #e1e1e1
+      box-sizing border-box
+      .detail-address
+        width 100%
+        .address-title
+          height 56px
+          line-height 56px
+          font-size 16px
+          color #333
+          font-weight 600
+          padding-left 20px
+        .addressAll
+          width 100%
+          margin-bottom 30px
+          padding-left 21px
+          box-sizing border-box
+          overflow hidden
+          .addressBox
+            width 232px
+            height 110px
+            float left
+            margin-right 10px
+            box-sizing border-box
+            padding 0 10px
+            color #b3b3b3
+            overflow hidden
+            margin-bottom 10px
+            cursor pointer
+            position relative
+            &:before
+              content ''
+              width 232px
+              height 110px
+              position absolute
+              top 0
+              left 0
+              background-repeat no-repeat
+              background-position center
+              background-image url("resource/icon.png")
+            .name
+              height 30px
+              line-height 30px
+              border-bottom 1px dotted #e6e6e6
+              .ueserName
+                height 100%
+                float left
+                font-size 12px
+                color #b3b3b3
+              .select
+                float right
+                border none
+                font-size 12px
+                color #fff
+                background #f35a35
+                width 70px
+                height 20px
+                line-height 20px
+                margin-top 5px
+                outline none
+            .detail
+              height 73px
+              line-height 24px
+              font-size 0
+              span
+                display inline-block
+                vertical-align top
+                width 100%
+                font-size 12px
+                color #b3b3b3
+            &.active
+              &:before
+                background-image url("resource/img_xuanze_1.png")
+          .new-addressBox
+            width 232px
+            height 110px
+            float left
+            margin-right 10px
+            padding 0 10px
+            border 2px solid #e1e1e1
+            box-sizing border-box
+            color #b3b3b3
+            cursor pointer
+            .name
+              height 100%
+              line-height 110px
+              text-align center
+      .bill
+        height auto
+        width 100%
+        padding 10px 0 20px 20px
+        border-bottom 1px solid #e1e1e1
+        box-sizing border-box
+        .bill-title
+          height 36px
+          line-height 36px
+          font-weight 600
+          font-size 16px
+          color #333
+        .bill-type
+          height 45px
+          .need
+            float left
+            height 30px
+            line-height 30px
+            width 100px
+            box-sizing border-box
+            border 1px solid #e1e1e1
+            text-align center
+            margin-right 20px
+            font-size 12px
+            color #333
+            cursor pointer
+            user-select none
+            &.active
+              position relative
+              &:before
+                content ''
+                display inline-block
+                position absolute
+                left 0
+                right 0
+                bottom -2px
+                top -1px
+                z-index 2
+                background-repeat no-repeat
+                background-image url("resource/img_xuanze_2.png")
+          .chioce
+            float left
+            border 1px solid #e1e1e1
+            width 120px
+            font-size 12px
+            color #333
+            box-sizing border-box
+            text-align center
+            height 30px
+            padding-left 5px
+            line-height 30px
+
+
+        .billTitle-wrapper
+          width 100%
+          height 100px
+          margin-bottom 50px
+          .warn
+            iBlock()
+            width 100%
+            height auto
+            font-size 12px
+            color #999
+            margin-top 20px
+          .billTitle-item
+            width 310px
+            height 137px
+            float left
+            margin-right 10px
+            box-sizing border-box
+            padding 0 10px
+            color #b3b3b3
+            overflow hidden
+            margin-bottom 10px
+            cursor pointer
+            position relative
+            &:before
+              content ''
+              width 310px
+              height 137px
+              position absolute
+              top 0
+              left 0
+              background-repeat no-repeat
+              background-position center
+              background-image url("resource/icon_unfocusTitle.png")
+            &.active
+              &:before
+                background-image url("resource/img_focusTitle.png")
+            .billTitle-head
+              width 100%
+              height 30px
+              box-sizing border-box
+              border-bottom 1px dashed #e1e1e1
+              line-height 30px
+              font-size 12px
+              color #333
+              limit()
+            .billTitle-information
+              display block
+              width 100%
+              height 107px
+              .information-item
+                width 100%
+                height auto
+                font-size 12px
+                color #333
+                margin-top 7px
+                limit()
+        .other-information
+          .text
+            width 440px
+            height 140px
+            border 1px solid #e1e1e1
+            padding 10px
+            box-sizing border-box
+            outline none
+            color #333
+
+
+      .product
+        height auto
+        width 100%
+        padding 0 20px
+        box-sizing border-box
+        .product-title
+          line-height 1em
+          font-size 16px
+          color #333
+          margin-top 30px
+          margin-bottom 20px
+          font-weight bold
+    .confirm
+      float right
+      width 380px
+      margin-top 20px
+      .confirm-information
+        border 2px solid #f35833
+        box-sizing border-box
+        width 100%
+        height auto
+        padding-right 15px
+        .total-money
+          height 45px
+          line-height 45px
+          font-size 12px
+          color #333
+          font-weight 600
+          text-align right
+          .money
+            font-size 24px
+            color #f35833
+        .address
+          line-height 19px
+          font-size 12px
+          color #333
+          text-align right
+          .endAddress
+            display inline-block
+            vertical-align top
+            width auto
+            color #666
+            text-align left
+        .contacts
+          height 25px
+          line-height 25px
+          font-size 12px
+          color #333
+          text-align right
+          margin-bottom 26px
+          .contacts-con
+            color #666
+      .commit
+        float right
+        width 180px
+        height 38px
+        border none
+        outline none
+        background #f35932
+        color #fff
+        font-size 16px
+        cursor pointer
+      .cancel
+        float right
+        width 180px
+        height 38px
+        border none
+        outline none
+        background-color #666
+        color #e1e1e1
+        font-size 16px
+        cursor pointer
+  .create-address
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    z-index 20
+    background-color rgba(0,0,0,0.5)
+    .created
+      width 800px
+      height 454px
+      position absolute
+      top 50%
+      left 50%
+      margin-top -231px
+      margin-left -408px
+      border 8px solid rgba(0,0,0,0.2)
+      cursor default
+      .created-center
+        width 100%
+        height 100%
+        background-color #fff
+        box-sizing border-box
+        padding 0 12px 0 12px
+        .created-head
+          width 100%
+          height 42px
+          color #333
+          font-size 14px
+          font-weight bold
+          line-height 42px
+          box-sizing border-box
+          padding 0 10px
+          border-bottom 1px dotted #e1e1e1
+          overflow hidden
+          .close
+            float right
+            width 42px
+            height 100%
+            background-repeat no-repeat
+            background-position center
+            background-image url("resource/icon_close.png")
+            cursor pointer
+
+        .created-content
+          width 100%
+          height auto
+          box-sizing border-box
+          padding-top 30px
+          .created-ul
+            display block
+            width 450px
+            height auto
+            margin 0 auto
+            font-size 0
+            .created-item
+              display inline-block
+              vertical-align top
+              width 100%
+              height 30px
+              line-height 30px
+              margin-bottom 12px
+              .created-title
+                display inline-block
+                vertical-align top
+                width 72px
+                height 100%
+                color #333
+                font-size 12px
+                text-align right
+                &:before
+                  content '*'
+                  display inline-block
+                  vertical-align top
+                  width auto
+                  height auto
+                  color #f35833
+                  margin-top 2px
+                  margin-right 1px
+
+
+              .created-information
+                display inline-block
+                vertical-align top
+                width 378px
+                height 100%
+                box-sizing border-box
+                .entry-text
+                  width 194px
+                  height 28px
+                  box-sizing border-box
+                  border 1px solid #ccc
+                  text-indent 10px
+                  color #666
+                  font-size 12px
+                  &.long
+                    width 324px
+                .choice-type
+                  display inline-block
+                  vertical-align top
+                  width 90px
+                  height 28px
+                  margin-top 1px
+                  box-sizing border-box
+                  border 1px solid #ccc
+                  text-align center
+                  line-height 28px
+                  color #ccc
+                  font-size 12px
+                  cursor pointer
+                  user-select none
+                  &.active
+                    position relative
+                    color #333
+                    &:before
+                      content ''
+                      position absolute
+                      top -1px
+                      left -2px
+                      right 0
+                      bottom -1px
+                      background-repeat no-repeat
+                      background-image url("resource/icon_address_type.png")
+                      z-index 2
+                  &:first-child
+                    margin-right 14px
+
+
+                .select
+                  margin-right 1px
+
+          .save-address
+            width 100%
+            height auto
+            margin-top 20px
+            font-size 0
+            text-align center
+            .save-button
+              display inline-block
+              vertical-align top
+              width 100px
+              height 30px
+              color #fff
+              mainBack()
+              text-align center
+              line-height 30px
+              border-radius 3px
+              font-size 14px
+              cursor pointer
+
+
+
+  .confirm-order
+    width 100%
+    height auto
+    box-sizing border-box
+    border 1px solid #e1e1e1
+    .confirm-title
+      width 100%
+      height 50px
+      box-sizing border-box
+      border-bottom 1px solid #e1e1e1
+      background-color #e9f9ff
+      line-height 49px
+      padding 0 20px
+      font-size 16px
+      color #333
+      font-weight bold
+    .order-confirm-content
+      width 100%
+      height auto
+      box-sizing border-box
+      padding 30px 20px 40px 20px
+      .order-table
+        width 100%
+        height auto
+        overflow hidden
+        box-sizing border-box
+        border 1px solid #e1e1e1
+        .order-cell
+          width auto
+          min-height 159px
+          border-right 1px solid #e1e1e1
+          font-size 0
+          float left
+          &:nth-child(1)
+            width 267px
+          &:nth-child(2)
+            width 266px
+          &:nth-child(3)
+            width 122px
+          &:nth-child(4)
+            width 124px
+          &:nth-child(5)
+            width 173px
+            border-right none
+          .title
+            display inline-block
+            vertical-align top
+            width 100%
+            height 39px
+            border-bottom 1px solid #e1e1e1
+            text-align center
+            line-height 38px
+            font-size 12px
+            color #999
+            background-color #f8f8f8
+          .content
+            display table
+            vertical-align top
+            width 100%
+            height auto
+            box-sizing border-box
+            text-align center
+            padding 10px
+            .content-picture
+              display inline-block
+              vertical-align top
+              width 96px
+              height 98px
+              overflow hidden
+            .content-context
+              display inline-block
+              vertical-align top
+              width 140px
+              height auto
+              margin-left 10px
+              .product-name
+                display inline-block
+                vertical-align top
+                font-size 12px
+                color #333
+                width 100%
+                letter-spacing 1px
+                margin-bottom 10px
+                line-height 16px
+                text-align left
+              .product-attr
+                display inline-block
+                vertical-align top
+                width 100%
+                font-size 12px
+                color #999
+                letter-spacing 1px
+                line-height 16px
+                text-align left
+
+
+
+            .content-out
+              display table
+              font-size 12px
+              color #333
+              height 98px
+              width 100%
+              .content-inside
+                display table-cell
+                vertical-align middle
+                &.weight
+                  font-size 18px
+                  color #f35833
+                  font-weight bold
+      .order-address
+        width 100%
+        height 71px
+        margin-top 30px
+        box-sizing border-box
+        border-top 1px dashed #e1e1e1
+        line-height 71px
+        font-size 12px
+        color #333
+        .confirm-tag
+          display inline-block
+          vertical-align top
+          width 98px
+          height 30px
+          text-align center
+          line-height 30px
+          font-size 12px
+          margin-right 10px
+          margin-top 20px
+          background-repeat no-repeat
+          background-position center
+          background-image url("resource/img_xuanze_2.png")
+          cursor default
+
+      .order-bill
+        width 100%
+        height auto
+        padding-top 20px
+        border-top 1px dashed #e1e1e1
+        .bill-title
+          width 100%
+          height auto
+          limit()
+          .bill-information
+            iBlock()
+            width auto
+            height auto
+            line-height 30px
+            font-size 12px
+            color #333
+        .confirm-tag
+          display inline-block
+          vertical-align top
+          width 98px
+          height 30px
+          text-align center
+          line-height 30px
+          font-size 12px
+          margin-right 10px
+          background-repeat no-repeat
+          background-position center
+          background-image url("resource/img_xuanze_2.png")
+          cursor default
+        .tips
+          display inline-block
+          vertical-align top
+          width 100%
+          height auto
+          margin-top 14px
+          box-sizing border-box
+          padding 18px 15px
+          font-size 12px
+          color #666
+          background-color #fafafa
+
+        .order-confirm-button
+          text-align center
+          padding 20px 0 0 0
+          font-size 0
+          .submit-button
+            display inline-block
+            vertical-align top
+            width 180px
+            height 46px
+            background-color #f35932
+            color #fff
+            text-align center
+            line-height 46px
+            font-size 16px
+            border-radius 3px
+            cursor pointer
+          .cancel-button
+            display inline-block
+            vertical-align top
+            width 140px
+            height 46px
+            background-color #666
+            color #e1e1e1
+            text-align center
+            line-height 46px
+            font-size 16px
+            border-radius 3px
+            cursor pointer
+            margin-right 10px
+  .order-wrapper
+    width 100%
+    height auto
+    font-size 0
+    .order-wrapper-ul
+      width 100%
+      height auto
+      padding-bottom 10px
+      border-bottom 3px solid #ffcbbe
+      .order-title-list
+        iBlock()
+        font-size 12px
+        color #666
+        &:nth-child(1)
+          width 320px
+        &:nth-child(2)
+          width 284px
+        &:nth-child(3)
+          width 140px
+        &:nth-child(4)
+          width 142px
+        &:nth-child(5)
+          width 72px
+    .order-list-wrapper
+      width 100%
+      height auto
+      .order-list-header
+        width 100%
+        height auto
+        padding 13px 0 8px 0
+        .header-item
+          iBlock()
+          margin-right 30px
+          font-size 12px
+          line-height 26px
+          &:before
+            content ''
+            iBlock()
+            width 20px
+            height 19px
+            background-position center
+            background-repeat no-repeat
+            margin-right 6px
+          .title
+            color #666
+          .text
+            color #333
+          &:nth-child(1)
+            &:before
+              background-image url("resource/icon_gongyingshang.png")
+          &:nth-child(2)
+            &:before
+              background-image url("resource/icon_chanpin.png")
+      .order-list-content
+        width 100%
+        height auto
+        .order-list-row
+          display block
+          width 100%
+          height 123px
+          background-color #f7f7f7
+          box-sizing border-box
+          border-bottom 1px dashed #cccccc
+          border-top 1px dashed #ccc
+          margin-bottom 14px
+          .information-item
+            iBlock()
+            height 100%
+            box-sizing border-box
+            padding-top 14px
+            &:nth-child(1)
+              width 320px
+            &:nth-child(2)
+              width 284px
+            &:nth-child(3)
+              width 140px
+            &:nth-child(4)
+              width 142px
+            &:nth-child(5)
+              width 72px
+            .product-information
+              width 100%
+              height 100%
+              box-sizing border-box
+              padding-left 14px
+              font-size 0
+              .picture
+                iBlock()
+                width 60px
+                height 60px
+                background-position center
+                background-size cover
+                background-repeat no-repeat
+                background-color #fff
+              .name
+                iBlock()
+                font-size 12px
+                color #333
+                width 160px
+                height 100%
+                line-height 16px
+                margin-left 8px
+
+            .sku-attr
+              width 100%
+              height 100%
+              box-sizing border-box
+              .attr-row
+                limit()
+                width 100%
+                font-size 12px
+                color #222
+                margin-bottom 5px
+                &.red
+                  color #f35833
+                  font-weight bold
+
+            .counter-wrapper
+              width 100%
+              height 100%
+            .list-total
+              iBlock()
+              width 100%
+              font-size 12px
+              mainColor()
+              font-weight bold
+        .total-money
+          height 45px
+          line-height 45px
+          font-size 12px
+          color #333
+          font-weight 600
+          text-align right
+          .money
+            font-size 24px
+            color #f35833

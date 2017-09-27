@@ -1,0 +1,68 @@
+@import "../../common/common.styl"
+.helpCenter-container
+  width 100%
+  height auto
+  margin 0 auto
+  mainTopBorder(2px,solid)
+  .helpCenter-content
+    width 1200px
+    margin 0 auto
+    overflow hidden
+    height auto
+    .helpCenter-title
+      height 60px
+      line-height 60px
+      font-size 14px
+      .title
+        width 100%
+        height 100%
+        .titleList
+          color #333
+    .helpCenter-box
+      width 100%
+      height auto
+      margin 0 0 50px 0
+      overflow hidden
+      .helpCenter-left
+        float left
+        width 315px
+        height auto
+        .helpLeft-top
+          width 100%
+          height 54px
+          line-height 54px
+          text-align center
+          color #fff
+          mainBack()
+          font-size 18px
+          margin-bottom 10px
+        .helpLeft-bottom
+          width 100%
+          height auto
+          box-sizing border-box
+          .helpLeft-ul
+            width 100%
+            height auto
+            overflow hidden
+            padding 14px 0
+            box-sizing border-box
+            &.helpLeft-ulActive
+              display block
+            .helpLeft-item
+              padding-left 30px
+              box-sizing border-box
+              width 100%
+              height 34px
+              line-height 34px
+              color #666
+              cursor pointer
+              &:hover
+                mainColor()
+              &.helpLeft-itemActive
+                mainColor()
+      .helpCenter-right
+        width 860px
+        float right
+        height auto
+        border 1px solid #ededed
+        box-sizing border-box

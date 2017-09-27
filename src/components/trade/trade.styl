@@ -1,0 +1,246 @@
+@import "../../common/common.styl"
+.swiper-wrapper
+  width 100%
+  height 440px
+  position relative
+  .banner-wrapper
+    position absolute
+    top 0
+    left 0
+    height 100%
+    width 100%
+    z-index -1
+    overflow hidden
+    .banner-content
+      width 1200px
+      height 100%
+      margin 0 auto
+      .banner-box
+        width 100%
+        height 100%
+        position relative
+        left -360px
+        top 0
+        .banner-contentBox
+          width 1920px
+          height 100%
+    .click-btn
+      display none
+    &:hover
+      .click-btn
+        display block
+      .swiper-pagination
+        bottom 10px
+        left 50%
+.trade-container
+  width 100%
+  height auto
+  background #f5f5f5
+  padding 50px 0
+  box-sizing border-box
+  .trade-content
+    width 1200px
+    height auto
+    margin 0 auto
+    .trade-match
+      width 100%
+      height auto
+      .trade-title
+        width 100%
+        height 54px
+        background #fff
+        mainBottomBorder(2px,solid)
+        .title
+          float left
+          width 180px
+          height 100%
+          mainBack()
+          color #ffff
+          font-size 18px
+          font-weight bold
+          text-align center
+          line-height 54px
+      .trade-tree
+        width 100%
+        height 164px
+        background url("resource/icon_cuohejiaoyi.jpg") no-repeat center
+      .trade-box
+        width 100%
+        height auto
+        background #fff
+
+        margin-top 15px
+        .trade-box-title
+          width 100%
+          height 52px
+          border-bottom 1px solid #e1e1e1
+          box-sizing border-box
+          padding 0 1%
+          .trade-box-titleCon
+            width 100%
+            height 100%
+            .trade-list
+              height 100%
+              line-height 51px
+              font-size 0
+              .item
+                iBlock()
+                width 17%
+                height 100%
+                line-height 51px
+                font-size 14px
+                color #333
+                text-align center
+                &:nth-child(3)
+                  width 20%
+                  white-space nowrap
+                  overflow hidden
+                  text-overflow ellipsis
+                &:nth-child(4)
+                  white-space nowrap
+                  overflow hidden
+                  text-overflow ellipsis
+                &:last-child
+                  width 12%
+        .trade-box-con
+          width 100%
+          height 519px
+          padding 0 1%
+          overflow hidden
+          box-sizing border-box
+          .trade-list
+            height 52px
+            line-height 51px
+            font-size 0
+            border-bottom 1px solid #e1e1e1
+            box-sizing border-box
+            .item
+              iBlock()
+              width 17%
+              height 100%
+              line-height 51px
+              font-size 14px
+              color #333
+              text-align center
+              &:nth-child(3)
+                width 20%
+                white-space nowrap
+                overflow hidden
+                text-overflow ellipsis
+              &:nth-child(4)
+                white-space nowrap
+                overflow hidden
+                text-overflow ellipsis
+              &:last-child
+                width 10%
+              .price
+                width 100px
+                height 30px
+                display block
+                margin 10px auto
+                mainBack()
+                font-size 14px
+                color #fff
+                line-height 30px
+                text-align center
+                border-radius 3px
+                cursor pointer
+    .trade-groupBuy
+      width 100%
+      height auto
+      margin-top 50px
+      .trade-title
+        width 100%
+        height 54px
+        background #fff
+        mainBottomBorder(2px,solid)
+        .title
+          float left
+          width 180px
+          height 100%
+          mainBack()
+          color #ffff
+          font-size 18px
+          font-weight bold
+          text-align center
+          line-height 54px
+      .trade-tree
+        width 100%
+        height 164px
+        background url("resource/icon_jicaijiaoyi.jpg") no-repeat center
+      .trade-box
+        width 100%
+        height auto
+        background #fff
+        margin-top 15px
+        .trade-box-title
+          width 100%
+          height 52px
+          border-bottom 1px solid #e1e1e1
+          box-sizing border-box
+          padding 0 1%
+          .trade-box-titleCon
+            width 100%
+            height 100%
+            .trade-list
+              height 100%
+              line-height 51px
+              font-size 0
+              .item
+                iBlock()
+                width 14%
+                height 100%
+                line-height 51px
+                font-size 14px
+                color #333
+                text-align center
+                &:nth-child(4)
+                  width 22%
+                &:nth-child(6)
+                  width 10%
+                &:last-child
+                  width 12%
+        .trade-box-con
+          width 100%
+          height 519px
+          padding 0 1%
+          overflow hidden
+          box-sizing border-box
+          .trade-list
+            height 52px
+            line-height 51px
+            font-size 0
+            box-sizing border-box
+            border-bottom 1px solid #e1e1e1
+            .item
+              iBlock()
+              width 14%
+              height 100%
+              line-height 51px
+              font-size 14px
+              color #333
+              text-align center
+              &:nth-child(4)
+                width 22%
+              &:nth-child(6)
+                width 10%
+              &:last-child
+                width 12%
+              .price
+                width 100px
+                height 30px
+                display block
+                margin 10px auto
+                mainBack()
+                font-size 14px
+                color #fff
+                line-height 30px
+                text-align center
+                border-radius 3px
+                cursor pointer
+            .finish
+              color #999
+            .doing
+              color #f4b707
+            .start
+              color #2c9cf
