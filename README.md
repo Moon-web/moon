@@ -1,6 +1,3 @@
-# ccbot
-
-> Y
 
 ## Build Setup
 
